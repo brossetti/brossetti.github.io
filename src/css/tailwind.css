@@ -5,15 +5,18 @@
 @tailwind utilities;
 
 #who {
-    background-image: url('../img/star-field.svg'),linear-gradient(to bottom, theme('colors.who'), theme('colors.what'));
+    background-image: 
+        url('../img/star-field.svg'),
+        linear-gradient(to bottom, theme('colors.space'), theme('colors.exo'));
     height: 80vh;
 }
 #what {
-    background-image: linear-gradient(to bottom, theme('colors.what'), theme('colors.when'));
+    background-image: linear-gradient(to bottom, theme('colors.exo'), 70%, theme('colors.thermo'));
 }
 #when {
-    background-image: linear-gradient(to bottom, theme('colors.when'), theme('colors.where'));
+    background-image: linear-gradient(to bottom, theme('colors.thermo'), 70%, theme('colors.meso'));
 }
 #where {
-    background-image: linear-gradient(to bottom, theme('colors.where'), theme('colors.why'));
+    background-image: linear-gradient(to bottom, theme('colors.meso'), 70%, theme('colors.tropo'));
 }
+

@@ -5,11 +5,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        who: '#191919',
-        what: '#5B5F97',
-        when: '#EFD9CE',
-        where: '#A9FFF7',
-        why: '#43AA8B'
+        space: '#191919',
+        exo: '#5B5F97',
+        thermo: '#D199B6',
+        meso: '#68C3D4',
+        tropo: '#A9FFF7',
+        terra: '#43AA8B'
       }
     },
   },
