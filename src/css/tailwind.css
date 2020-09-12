@@ -2,21 +2,42 @@
 
 @tailwind components;
 
+@font-face {
+    font-family: 'Megrim';
+    src: url(../font/Megrim-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Do Hyeon';
+    src: url(../font/DoHyeon-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Nanum Gothic';
+    src: url(../font/NanumGothic-Regular.ttf) format('truetype');
+}
+
+/* @font-face {
+    font-family: 'Nanum Gothic';
+    src: url(../font/NanumGothic-Bold.ttf) format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Nanum Gothic';
+    src: url(../font/NanumGothic-ExtraBold.ttf) format('truetype');
+    font-weight: bolder;
+} */
+
 @tailwind utilities;
 
 #who {
     background-image: 
         url('../img/star-field.svg'),
-        linear-gradient(to bottom, theme('colors.space'), theme('colors.exo'));
+        linear-gradient(to bottom, theme('colors.black'), theme('colors.purple') 95%, theme('colors.white') 95%);
     height: 80vh;
 }
-#what {
-    background-image: linear-gradient(to bottom, theme('colors.exo'), 70%, theme('colors.thermo'));
-}
-#when {
-    background-image: linear-gradient(to bottom, theme('colors.thermo'), 70%, theme('colors.meso'));
-}
-#where {
-    background-image: linear-gradient(to bottom, theme('colors.meso'), 70%, theme('colors.tropo'));
-}
 
+#title {
+    text-shadow: 0px 0px 0.25rem theme('colors.white');
+}
