@@ -1,35 +1,23 @@
 @tailwind base;
-
 @tailwind components;
-
-@font-face {
-    font-family: 'Megrim';
-    src: url(../font/Megrim-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Do Hyeon';
-    src: url(../font/DoHyeon-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Nanum Gothic';
-    src: url(../font/NanumGothic-Regular.ttf) format('truetype');
-}
-
-/* @font-face {
-    font-family: 'Nanum Gothic';
-    src: url(../font/NanumGothic-Bold.ttf) format('truetype');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Nanum Gothic';
-    src: url(../font/NanumGothic-ExtraBold.ttf) format('truetype');
-    font-weight: bolder;
-} */
-
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Megrim';
+        src: url(../font/Megrim-Regular.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Do Hyeon';
+        src: url(../font/DoHyeon-Regular.ttf) format('truetype');
+    }
+    
+    @font-face {
+        font-family: 'Nanum Gothic';
+        src: url(../font/NanumGothic-Regular.ttf) format('truetype');
+    }
+}
 
 #who {
     background-image: 
