@@ -24,6 +24,7 @@
         url('../img/star-field.svg'),
         linear-gradient(to bottom, theme('colors.black'), theme('colors.purple') 95%, theme('colors.white') 95%);
     height: 80vh;
+    min-height: 32rem;
 }
 
 #title {
