@@ -19,14 +19,52 @@
     }
 }
 
-#who {
-    background-image: 
-        url('../img/star-field.svg'),
-        linear-gradient(to bottom, theme('colors.black'), theme('colors.purple') 95%, theme('colors.white') 95%);
-    height: 80vh;
-    min-height: 32rem;
-}
+@layer components {
+    .cutout {
+        @apply rounded-lg;
+        box-shadow: inset 0px 0px 0.5rem 0px theme('colors.shadow');
+    }
 
-#title {
-    text-shadow: 0px 0px 0.25rem theme('colors.white');
+    #who {
+        background-image: 
+            url('../img/star-field.svg'),
+            linear-gradient(to bottom, theme('colors.black'), theme('colors.purple') 95%, theme('colors.white') 95%);
+        height: 80vh;
+        min-height: 32rem;
+    }
+    
+    #title {
+        text-shadow: 0px 0px 0.25rem theme('colors.white');
+    }
+    
+    .timepoint {
+        @apply flex;
+        @apply flex-no-wrap;
+        @apply flex-row-reverse;
+    }
+
+    @screen md {
+        .timepoint:nth-child(odd) {
+            @apply flex-row;
+        }
+    }
+
+    .event {
+        @apply bg-spectrum-12;
+        @apply cutout;
+        @apply w-5/12;
+    }
+
+    .timeline {
+        @apply w-2/12;
+        @apply border;
+    }
+
+    .timepoint:first-child .timeline {
+        border-radius: 0.5rem 0.5rem 0px 0px;
+    }
+
+    .timepoint:last-child .timeline {
+        border-radius: 0px 0px 0.5rem 0.5rem;
+    }
 }
