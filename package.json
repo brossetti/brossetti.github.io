@@ -12,7 +12,7 @@
     "watch": "npm run watch:css & npm run watch:ts",
     "watch:css": "postcss ./src/css/tailwind.css -o ./dist/index.css --watch",
     "watch:ts": "tsc --project tsconfig.watch.json",
-    "serve": "npm run watch & live-server --entry-file=./index.html"
+    "serve": "npm run watch & live-server --watch=index.html,img/*,font/*,dist/*"
   },
   "repository": {
     "type": "git",
