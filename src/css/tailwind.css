@@ -9,8 +9,8 @@
     }
     
     @font-face {
-        font-family: 'Do Hyeon';
-        src: url(../font/DoHyeon-Regular.ttf) format('truetype');
+        font-family: 'Nanum Gothic Coding';
+        src: url(../font/NanumGothicCoding-Bold.ttf) format('truetype');
     }
     
     @font-face {
@@ -57,7 +57,6 @@
 
     .timeline {
         @apply w-2/12;
-        @apply border;
     }
 
     .timepoint:first-child .timeline {
