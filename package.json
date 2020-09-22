@@ -6,8 +6,8 @@
   "private": true,
   "scripts": {
     "clean": "rm -f dist/*.*",
-    "build": "npm run build:css && build:ts",
-    "build:css": "postcss css/tailwind.css -o ./dist/index.css",
+    "build": "npm run build:css && npm run build:ts",
+    "build:css": "postcss ./src/css/tailwind.css -o ./dist/index.css",
     "build:ts": "tsc --project tsconfig.json",
     "watch": "npm run watch:css & npm run watch:ts",
     "watch:css": "postcss ./src/css/tailwind.css -o ./dist/index.css --watch",
