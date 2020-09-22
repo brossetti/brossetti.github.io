@@ -58,12 +58,4 @@
     .timeline {
         @apply w-2/12;
     }
-
-    .timepoint:first-child .timeline {
-        border-radius: 0.5rem 0.5rem 0px 0px;
-    }
-
-    .timepoint:last-child .timeline {
-        border-radius: 0px 0px 0.5rem 0.5rem;
-    }
 }
