@@ -23,13 +23,12 @@ const navObsCallback = function(entries: IntersectionObserverEntry[], navbarObs:
             navbar.classList.add("bg-transparent");
             navbar.classList.remove("bg-white","shadow-md");
         }
-        console.log(entry.isIntersecting);
     });
 }
 
 let navObsOptions = {
     rootMargin: '0px',
-    threshold: 1
+    threshold: 0.9
 };
 
 const navObs = new IntersectionObserver(navObsCallback, navObsOptions);
