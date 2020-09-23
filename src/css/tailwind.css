@@ -20,9 +20,6 @@
 }
 
 @layer components {
-    .cutout {
-        @apply rounded-lg;
-        box-shadow: inset 0px 0px 0.5rem 0px theme('colors.shadow');
     }
 
     #who {
@@ -41,21 +38,44 @@
         @apply flex;
         @apply flex-no-wrap;
         @apply flex-row-reverse;
+        @apply relative;
     }
 
-    @screen md {
-        .timepoint:nth-child(odd) {
+    @screen sm {
+        .timepoint:nth-child(even) {
             @apply flex-row;
         }
     }
 
     .event {
         @apply bg-spectrum-12;
-        @apply cutout;
         @apply w-5/12;
+        @apply rounded-lg;
+        @apply mt-10;
+        @apply py-5 px-2;
+        box-shadow: inset 1px -1px 0.35rem 0px theme('colors.shadow');
     }
+
+    .event:before {
+        content: '';
+        position: absolute;
+        width: 1.5rem;
+        height: 1.5rem;
+        right: 47.75%;
+        top: 55%;
+        background-color: theme('colors.spectrum-12');
+        border: 0.4rem solid theme('colors.purple');
+        border-radius: 50%;
+        z-index: 41;
+      }
 
     .timeline {
         @apply w-2/12;
+    }
+
+    .timeline line {
+        stroke: theme('colors.purple');
+        stroke-width: 0.5rem;
+        stroke-linecap: round;
     }
 }
