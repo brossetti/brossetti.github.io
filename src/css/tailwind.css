@@ -36,6 +36,18 @@
     #title {
         text-shadow: 0px 0px 0.25rem theme('colors.white');
     }
+
+    .break {
+        @apply text-center;
+        @apply max-w-xs;
+        @apply mx-auto;
+        @apply mt-10;
+        @apply px-32;
+    }
+    .break circle{
+        fill: theme('colors.purple');
+        fill-opacity: 0.2;
+    }
     
     .timepoint {
         @apply flex;
@@ -70,7 +82,7 @@
         border: 0.4rem solid theme('colors.purple');
         border-radius: 50%;
         z-index: 41;
-      }
+    }
 
     .timeline {
         @apply w-2/12;
