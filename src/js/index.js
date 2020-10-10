@@ -1,7 +1,7 @@
 import anime from "animejs";
 
-const navbar = document.getElementById("navbar")!;
-const sectionWho = document.getElementById("who")!;
+const navbar = document.getElementById("navbar");
+const sectionWho = document.getElementById("who");
 
 // hide navbar on scroll
 let prevScrollPos = window.pageYOffset;
@@ -16,7 +16,7 @@ window.onscroll = function() {
 }
 
 // change navbar background at top
-const navObsCallback = function(entries: IntersectionObserverEntry[], navbarObs: IntersectionObserver) {
+const navObsCallback = function(entries, navbarObs) {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
             navbar.classList.add("bg-white","shadow-md");
