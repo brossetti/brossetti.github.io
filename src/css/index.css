@@ -93,4 +93,8 @@
         stroke-width: 0.5rem;
         stroke-linecap: round;
     }
+
+    #where svg {
+        @apply p-10;
+    }
 }
