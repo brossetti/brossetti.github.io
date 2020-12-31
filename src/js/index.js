@@ -37,7 +37,17 @@ const navObs = new IntersectionObserver(navObsCallback, navObsOptions);
 navObs.observe(sectionWho);
 
 // animate where icons
-// const whereIcons = document.querySelector('.where-icon');
+const whereIcons = document.querySelector('.where-icon');
+
+// const svgText = anime({
+//   targets: svgPath,
+//   loop: true,
+//   direction: 'alternate',
+//   strokeDashoffset: [anime.setDashoffset, 0],
+//   easing: 'easeInOutSine',
+//   duration: 700,
+//   delay: (el, i) => { return i * 500 }
+// });
 // const icon = () => {
 //   anime({
 //     targets: whereIcons,
