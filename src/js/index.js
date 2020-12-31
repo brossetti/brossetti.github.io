@@ -62,19 +62,38 @@ const whereIcons = document.querySelector('.where-icon');
 //   console.log('bad')
 // }
 
-var lineDrawing = anime({
-  targets: 'path',
-  strokeDashoffset: [anime.setDashoffset, 0],
-  easing: 'easeInOutCubic',
-  duration: 4000,
-  begin: function(anim) {
-    document.querySelector('path').setAttribute("stroke", "black");
-    document.querySelector('path').setAttribute("fill", "none");
-  },
-  complete: function(anim) {
-    document.querySelector('path').setAttribute("fill", "yellow");
-  },
-  autoplay: false
+const lineDrawing = anime({
+  targets: '.where-icon',
+  direction: "normal",
+  strokeDashoffset: [anime.setDashoffset,0],
+  easing: 'easeInOutSine',
+  duration: 2000
 });
 
-document.querySelector('.where-icon').onload = lineDrawing.restart;
+// var buttonEl = document.querySelector('button');
+
+// function animateButton(scale, duration, elasticity) {
+//   anime.remove(buttonEl);
+//   anime({
+//     targets: buttonEl,
+//     scale: scale,
+//     duration: duration,
+//     elasticity: elasticity
+//   });
+// }
+
+// function enterButton() { animateButton(1.2, 800, 400) };
+// function leaveButton() { animateButton(1.0, 600, 300) };
+
+// buttonEl.addEventListener('mouseenter', enterButton, false);
+// buttonEl.addEventListener('mouseleave', leaveButton, false);
+
+// document.querySelector('.where-icon').onclick = lineDrawing.restart;
+// begin: function(anim) {
+//   document.querySelector('path').setAttribute("stroke", "black");
+//   document.querySelector('path').setAttribute("fill", "none");
+// },
+// complete: function(anim) {
+//   document.querySelector('path').setAttribute("fill", "yellow");
+// },
+// autoplay: false

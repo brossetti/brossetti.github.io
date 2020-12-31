@@ -5,7 +5,7 @@
   "browser": "./index.html",
   "private": true,
   "scripts": {
-    "clean-dev": "rm -f ./dev/*.* && rm -f ./cache/*.*",
+    "clean-dev": "rm -f ./dev/*.* && rm -rf ./.cache/*",
     "clean-build": "rm -f ./docs/*.*",
     "dev": "npm run clean-dev && parcel ./src/index.html --out-dir ./dev --port 8080",
     "build": "npm run clean-build && parcel build ./src/index.html --out-dir ./docs --public-url ./"
