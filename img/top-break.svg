@@ -1,4 +1,4 @@
-<svg id="top-break" xmlns="http://www.w3.org/2000/svg" viewBox="2 0 203 100" preserveAspectRatio="xMaxYMax slice">
+<svg id="top-break" xmlns="http://www.w3.org/2000/svg" viewBox="2 0 203 99" preserveAspectRatio="xMaxYMax slice">
   <defs>
     <filter id="shadow" name="shadow">
       <feDropShadow dx="1" dy="1" stdDeviation="1"/>
