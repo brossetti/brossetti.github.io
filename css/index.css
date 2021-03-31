@@ -1,0 +1,361 @@
+:root {
+  /* colors */
+  --black: #191919;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --purple: #5b5f97;
+  --white: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --spectrum-1: #d73b48;
+  --spectrum-2: #e95a54;
+  --spectrum-3: #ff9760;
+  --spectrum-4: #f3bb63;
+  --spectrum-5: #f1cd65;
+  --spectrum-6: #ffe465;
+  --spectrum-7: #cfdb5e;
+  --spectrum-8: #aecd7b;
+  --spectrum-9: #c0df9e;
+  --spectrum-10: #d8f4c2;
+  --spectrum-11: #d6eacd;
+  --spectrum-12: #eaf9ea;
+}
+
+/* :::::::::::::::::::::::::: FONTS :::::::::::::::::::::::::: */
+
+/* banner font */
+@font-face {
+  font-family: "Megrim";
+  src: url(../font/Megrim-Regular.ttf) format("truetype");
+}
+
+/* title font */
+@font-face {
+  font-family: "Nanum Gothic Coding";
+  src: url(../font/NanumGothicCoding-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Nanum Gothic Coding";
+  src: url(../font/NanumGothicCoding-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+
+/* default font */
+@font-face {
+  font-family: "Nanum Gothic";
+  src: url(../font/NanumGothic-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Nanum Gothic";
+  src: url(../font/NanumGothic-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Nanum Gothic";
+  src: url(../font/NanumGothic-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
+}
+
+/* ::::::::::::::::::::::::: ELEMENTS :::::::::::::::::::::::: */
+
+body {
+  font-family: "Nanum Gothic", "Helvetica", "sans-serif";
+  color: var(--gray-800);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nanum Gothic Coding", "Courier New", "Courier", "monospace";
+}
+
+/* ::::::::::::::::::::::::: CLASSES ::::::::::::::::::::::::: */
+
+/* background colors */
+.bg-white {
+  background-color: var(--white);
+}
+.bg-transparent {
+  background-color: transparent;
+}
+.bg-s1 {
+  background-color: var(--spectrum-1);
+}
+.bg-s2 {
+  background-color: var(--spectrum-2);
+}
+.bg-s3 {
+  background-color: var(--spectrum-3);
+}
+.bg-s4 {
+  background-color: var(--spectrum-4);
+}
+.bg-s5 {
+  background-color: var(--spectrum-5);
+}
+.bg-s6 {
+  background-color: var(--spectrum-6);
+}
+.bg-s7 {
+  background-color: var(--spectrum-7);
+}
+.bg-s8 {
+  background-color: var(--spectrum-8);
+}
+.bg-s9 {
+  background-color: var(--spectrum-9);
+}
+.bg-s10 {
+  background-color: var(--spectrum-10);
+}
+.bg-s11 {
+  background-color: var(--spectrum-11);
+}
+.bg-s12 {
+  background-color: var(--spectrum-12);
+}
+
+.shadow {
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
+}
+
+/* containers */
+.container {
+  width: 100%;
+  padding: 0px 2.5rem 0px 2.5rem;
+}
+
+.cutout {
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: inset 1px -1px .45rem rgba(0,0,0,.5);
+}
+
+/* animations */
+.grow { 
+  transition: all .3s ease-in-out; 
+}
+.grow:hover { 
+  transform: scale(1.25); 
+}
+
+/* section break */
+.break {
+  text-align: center;
+  max-width: 20rem;
+  margin: 2.5rem auto 0px auto;
+  padding: 0px 8rem 0px 8rem;
+}
+.break circle {
+  fill: var(--purple);
+  fill-opacity: 0.2;
+}
+
+/* cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+}
+.card {
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--spectrum-12);
+  box-shadow: inset 1px -1px .35rem rgba(0,0,0,.5);
+}
+/* .card .thumbnail {
+  width: 75%;
+  margin: 0px auto 0px auto;
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  box-shadow: inset 1px -1px .5rem rgba(0,0,0,.5);
+}
+.card img {
+  width: 100%;
+  border-radius: 0.5rem;
+  mix-blend-mode: multiply;
+} */
+
+@media screen and (min-width: 40em) {
+  .container {
+    max-width: 40em;
+    margin: 0px auto 0px auto;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .container {
+    max-width: 64em;
+  }
+}
+
+/* ::::::::::::::::::::::::: NAVBAR :::::::::::::::::::::::::: */
+
+#navbar {
+  position: fixed;
+  z-index: 60;
+  right: 0px;
+  left: 0px;
+  padding: 1rem 1.25rem 1rem 1.25rem;
+  transition: top 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 700ms cubic-bezier(0.4, 0, 1, 1) 100ms;
+  font-family: "Nanum Gothic Coding", "Courier New", "Courier", "monospace";
+  text-transform: lowercase;
+}
+#navbar nav {
+  text-align: center;
+  color: var(--gray-500);
+}
+#navbar nav a {
+  padding: 0px 0.25rem 0px 0.25rem;
+  color: var(--gray-400);
+  outline: 0;
+  text-decoration: none;
+}
+#navbar nav a:hover {
+  color: var(--gray-400);
+}
+
+@media screen and (min-width: 40em) {
+  #navbar nav {
+    text-align: right;
+  }
+}
+
+/* ::::::::::::::::::::::::: BANNER :::::::::::::::::::::::::: */
+
+#banner {
+  position: relative;
+  z-index: 50;
+  height: 80vh;
+  min-height: 32rem;
+  padding-top: 4rem;
+  background-color: var(--black);
+  background-image: url("../img/star-field.svg"),
+  linear-gradient(
+    to bottom,
+    var(--black),
+    var(--purple) 95%,
+    var(--white) 95%
+  );
+}
+#banner h1 {
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding: 4rem 2rem 0px 2rem;
+  line-height: 1;
+  font-size: 3rem;
+  font-weight: normal;
+  font-family: "Megrim", "Courier New", "Courier", "monospace";
+  color: var(--gray-200);
+  text-shadow: 0px 0px 0.25rem var(--white);
+}
+#banner p {
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding-top: 0.5rem;
+  font-size: 1.125rem;
+  color: var(--gray-400);
+}
+#top-break-bg {
+  position: absolute;
+  width: 100%;
+  height: 15rem;
+  bottom: 0px;
+}
+#top-break-slide {
+  position: absolute;
+  height: 15rem;
+  bottom: 0px;
+  right: 0px;
+}
+
+@media screen and (min-width: 40em) {
+  #top-break-bg, #top-break-slide {
+    height: 20rem;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  #banner h1 {
+    line-height: 1.25;
+    font-size: 4rem;
+  }
+  #banner p {
+    padding-top: 0px;
+    font-size: 1.25rem;
+  }
+  #top-break-bg, #top-break-slide {
+    height: 24rem;
+  }
+}
+
+/* ::::::::::::::::::::::::::: ME :::::::::::::::::::::::::::: */
+
+#me {
+  text-align: center;
+  max-width: 36rem;
+  z-index: 40;
+}
+#me h2 {
+  margin-bottom: 0px;
+}
+#contact-btns {
+  padding-top: 1rem;
+}
+#contact-btns a {
+  display: inline-block;
+  max-width: 5rem;
+}
+#contact-btns svg {
+  width: 100%;
+  padding: 0px 1rem 0px 1rem;
+  color: var(--purple);
+}
+
+/* :::::::::::::::::::::::: RESEARCH ::::::::::::::::::::::::: */
+
+#research {
+  text-align: center;
+  max-width: 36rem;
+  z-index: 30;
+}
+
+/* :::::::::::::::::::::::: TEACHING ::::::::::::::::::::::::: */
+
+#teaching {
+  text-align: center;
+  max-width: 36rem;
+  z-index: 20;
+}
+
+/* :::::::::::::::::::::::: TINKERING :::::::::::::::::::::::: */
+
+#tinkering {
+  text-align: center;
+  max-width: 36rem;
+  z-index: 10;
+}
+
+/* ::::::::::::::::::::::::: FOOTER :::::::::::::::::::::::::: */
+
+#footer {
+  text-align: center;
+  height: auto;
+  padding: 1rem 0px 1rem 0px;
+  color: var(--white);
+  background-color: var(--purple);
+}
+#footer p {
+  margin: 0px 0px 0px 0px;
+}
