@@ -170,7 +170,7 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 1 1 30%;
+  flex: 1 1 12rem;
   margin: 1rem 1rem 1rem 1rem;
 }
 
@@ -293,6 +293,7 @@ h6 {
 #me {
   text-align: center;
   max-width: 36rem;
+  padding: 0px 1rem 0px 1rem;
   z-index: 40;
 }
 #me h2 {
@@ -316,6 +317,12 @@ h6 {
 #research {
   text-align: center;
   z-index: 30;
+}
+#research svg {
+  width: 75%;
+  margin: auto auto auto auto;
+  padding: 0px 1rem 0px 1rem;
+  opacity: 0.4;
 }
 
 /* :::::::::::::::::::::::: TEACHING ::::::::::::::::::::::::: */
