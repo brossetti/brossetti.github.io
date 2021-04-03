@@ -87,6 +87,9 @@ h6 {
 .bg-transparent {
   background-color: transparent;
 }
+.bg-purple {
+  background-color: var(--purple);
+}
 .bg-s1 {
   background-color: var(--spectrum-1);
 }
@@ -129,23 +132,24 @@ h6 {
 }
 
 /* containers */
-.container {
-  width: 100%;
-  /* padding: 0px 2.5rem 0px 2.5rem; */
-}
-
 .cutout {
   padding: 1rem 1rem 1rem 1rem;
   border-radius: 0.5rem;
   box-shadow: inset 1px -1px .45rem rgba(0,0,0,.5);
 }
-
-/* animations */
-.grow { 
-  transition: all .3s ease-in-out; 
+.container {
+  width: 100%;
 }
-.grow:hover { 
-  transform: scale(1.25); 
+@media screen and (min-width: 40em) {
+  .container {
+    max-width: 40em;
+    margin: 0px auto 0px auto;
+  }
+}
+@media screen and (min-width: 64em) {
+  .container {
+    max-width: 64em;
+  }
 }
 
 /* section break */
@@ -174,17 +178,29 @@ h6 {
   margin: 1rem 1rem 1rem 1rem;
 }
 
-@media screen and (min-width: 40em) {
-  .container {
-    max-width: 40em;
-    margin: 0px auto 0px auto;
-  }
+/* buttons */
+.btn {
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  display: inline-block;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  border-radius: 1.5rem;
+  color: var(--white);
+  background-color: var(--purple);
+  box-shadow: 1px -1px .45rem rgba(0,0,0,.5);
+  text-decoration: none; 
+  transition: all .3s ease-in-out; 
+}
+.btn:hover {
+  box-shadow: 2.5px -2.5px .45rem rgba(0,0,0,.5);
+  transform: scale(1.025); 
 }
 
-@media screen and (min-width: 64em) {
-  .container {
-    max-width: 64em;
-  }
+/* animations */
+.grow { 
+  transition: all .3s ease-in-out; 
+}
+.grow:hover { 
+  transform: scale(1.25); 
 }
 
 /* ::::::::::::::::::::::::: NAVBAR :::::::::::::::::::::::::: */
@@ -273,7 +289,6 @@ h6 {
     height: 20rem;
   }
 }
-
 @media screen and (min-width: 64em) {
   #banner h1 {
     line-height: 1.25;
@@ -322,7 +337,7 @@ h6 {
   width: 75%;
   margin: auto auto auto auto;
   padding: 0px 1rem 0px 1rem;
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 /* :::::::::::::::::::::::: TEACHING ::::::::::::::::::::::::: */
@@ -331,12 +346,18 @@ h6 {
   text-align: center;
   z-index: 20;
 }
+#teaching > .cutout {
+  margin: 1rem 1rem 1rem 1rem;
+}
 
 /* :::::::::::::::::::::::: TINKERING :::::::::::::::::::::::: */
 
 #tinkering {
   text-align: center;
   z-index: 10;
+}
+#tinkering > .cutout {
+  margin: 1rem 1rem 1rem 1rem;
 }
 
 /* ::::::::::::::::::::::::: FOOTER :::::::::::::::::::::::::: */
