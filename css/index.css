@@ -26,6 +26,11 @@
   --spectrum-10: #d8f4c2;
   --spectrum-11: #d6eacd;
   --spectrum-12: #eaf9ea;
+
+  /* fonts */
+  --font-main: "Nanum Gothic", "Helvetica", "sans-serif";
+  --font-code: "Nanum Gothic Coding", "Courier New", "Courier", "monospace";
+  --font-display: "Megrim", "Courier New", "Courier", "monospace";
 }
 
 /* :::::::::::::::::::::::::: FONTS :::::::::::::::::::::::::: */
@@ -66,7 +71,10 @@
 /* ::::::::::::::::::::::::: ELEMENTS :::::::::::::::::::::::: */
 
 body {
-  font-family: "Nanum Gothic", "Helvetica", "sans-serif";
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--font-main);
   color: var(--gray-800);
 }
 
@@ -75,7 +83,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Nanum Gothic Coding", "Courier New", "Courier", "monospace";
+  font-family: var(--font-code)
 }
 
 /* ::::::::::::::::::::::::: CLASSES ::::::::::::::::::::::::: */
@@ -213,7 +221,7 @@ h6 {
   padding: 1rem 1.25rem 1rem 1.25rem;
   transition: top 500ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 700ms cubic-bezier(0.4, 0, 1, 1) 100ms;
-  font-family: "Nanum Gothic Coding", "Courier New", "Courier", "monospace";
+  font-family: var(--font-code);
   text-transform: lowercase;
 }
 #navbar nav {
@@ -260,7 +268,7 @@ h6 {
   line-height: 1;
   font-size: 3rem;
   font-weight: normal;
-  font-family: "Megrim", "Courier New", "Courier", "monospace";
+  font-family: var(--font-display);
   color: var(--gray-200);
   text-shadow: 0px 0px 0.25rem var(--white);
 }
