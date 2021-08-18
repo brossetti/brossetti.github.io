@@ -5,7 +5,7 @@ const banner = document.getElementById("banner");
 let prevScrollPos = window.pageYOffset;
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
-  if (prevScrollPos > currentScrollPos) {
+  if (prevScrollPos > currentScrollPos || currentScrollPos < 10) {
     navbar.style.top = "0";
   } else {
     navbar.style.top = "-100px";
