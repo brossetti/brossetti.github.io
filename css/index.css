@@ -366,6 +366,7 @@ h6 {
 #footer {
   text-align: center;
   height: auto;
+  margin-top: auto;
   padding: 1rem 0px 1rem 0px;
   color: var(--white);
   background-color: var(--purple);
