@@ -107,9 +107,9 @@ table th.r {
 }
 #nyan-yeobie img {
   position: absolute;
-  left: calc(25% - 2rem);
+  left: calc(25% - 2.5rem);
   top: max(40vh, 16rem);
-  height: 3.5rem;
+  height: 3.25rem;
 }
 #rainbow {
   position: absolute;
