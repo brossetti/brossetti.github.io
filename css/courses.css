@@ -164,11 +164,21 @@ table th.r {
   z-index: 40;
 }
 
+/* ::::::::::::::::::::::::: DETAILS ::::::::::::::::::::::::: */
+
+#details {
+  text-align: center;
+  max-width: 36rem;
+  margin-top: 2.5rem;
+  padding: 0px 1rem;
+  z-index: 30;
+}
+
 /* :::::::::::::::::::::::: SCHEDULE ::::::::::::::::::::::::: */
 
 #schedule {
   text-align: center;
-  z-index: 30;
+  z-index: 20;
 }
 #schedule h2 {
   padding-bottom: 0.5rem;
@@ -201,6 +211,23 @@ table th.r {
 /* :::::::::::::::::::::::: SYLLABUS ::::::::::::::::::::::::: */
 
 #syllabus {
+  text-align: left;
+  padding: 0px 1rem;
+  z-index: 10;
+}
+
+#syllabus h2 {
   text-align: center;
-  z-index: 20;
+}
+
+#syllabus h3 {
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+@media screen and (min-width: 40em) {
+  #syllabus h3 {
+    margin-top: 2rem;
+  }
 }
