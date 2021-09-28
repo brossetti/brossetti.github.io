@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSCI-150: Introduction to Computer Science (Fall 2021)</title>
+  <meta name="description" content="Course website for CSCI-150: Introduction to Computer Science at Oberlin College">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- sanitize -->
+  <link rel="stylesheet" href="../../../css/vendor/sanitize.css">
+  <link rel="stylesheet" href="../../../css/vendor/typography.css">
+  <link rel="stylesheet" href="../../../css/vendor/assets.css">
+
+  <!-- custom -->
+  <link rel="stylesheet" href="../../../css/base.css">
+  <link rel="stylesheet" href="../../../css/courses.css">
+  <script defer src="../../../js/index.js"></script>
+
+  <meta name="theme-color" content="#5b5f97">
+  <link rel="icon" href="../../../favicon.svg">
+</head>
+
+<body>
+  <header id="navbar">
+    <a id="logo" href="#"></a>
+    <nav>
+      <a href="../../../index.html">Home</a>
+      <span>/</span>
+      <a href="#schedule">Schedule</a>
+      <span>/</span>
+      <a href="#syllabus">Syllabus</a>
+      <span>/</span>
+      <a href="https://cs.oberlin.edu/~cs150/">Labs</a>
+    </nav>
+  </header>
+  <section id="banner">
+    <h1>CSCI-150</h1>
+    <p>Introduction to Computer Science</p>
+    <p>Fall 2021</p>
+    <div id="nyan-yeobie">
+      <div id="rainbow"></div>
+      <img src="../../../img/nyan-yeobie.gif" alt="">
+    </div>
+  </section>
+  <section id="hello" class="container">
+    <h2>Hello, Class!</h2>
+    <p>Welcome to CSCI 150! This course is all about the fundamentals of computer programming. It's about solving problems, being creative, and building things... <i>digital things</i>. Sometimes our stuff will break. When it does, we'll learn how to fix it. That's computer science. Let's do this!</p>
+  </section>
+  <div class="break">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 10">
+      <circle cx="10" cy="5" r="2"/>
+      <circle cx="25" cy="5" r="2"/>
+      <circle cx="40" cy="5" r="2"/>
+    </svg>
+  </div>
+  <section id="details" class="container">
+    <p>
+      <b>Lecture Time:</b> 10:00-10:50AM MWF</br>
+      <b>Location:</b> King 306
+    </p>
+    <p>
+      <b>Lab Time:</b> 2:30-4:20PM W</br>
+      <b>Location:</b> King 201
+    </p>
+    <p>
+      <b>Office Hours:</b> 11:00AM-12:00PM W & 10:00-11:00AM Th</br>
+      <b>Location:</b> King 229
+    </p>
+  </section>
+  <div class="break">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 10">
+      <circle cx="10" cy="5" r="2"/>
+      <circle cx="25" cy="5" r="2"/>
+      <circle cx="40" cy="5" r="2"/>
+    </svg>
+  </div>
+  <section id="schedule" class="container">
+    <h2>schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Date</th>
+          <th>Topic</th>
+          <th>Reading</th>
+          <th>Assignment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Week 1 -->
+        <tr>
+          <td rowspan="3">1</td>
+          <td>Oct 4</td>
+          <td>Hello, Class!</td>
+          <td></td>
+          <td rowspan="3" class="c">
+            <a href="https://cs.oberlin.edu/~cs150/lab-1/">Lab 1 - Hello, Class!</a><br/><br/>
+            <a href="">Reflection 1</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Oct 6</td>
+          <td>Variables, Expressions, & Assignment</td>
+          <td>2.4-2.6<br/>2.9-2.11</td>
+        </tr>
+        <tr>
+          <td>Oct 8</td>
+          <td>Data Types</td>
+          <td>2.2-2.3<br/>2.7-2.8</td>
+        </tr>
+        <!-- Week 2 -->
+        <tr>
+          <td rowspan="3">2</td>
+          <td>Oct 11</td>
+          <td>For Loops</td>
+          <td>4.4-4.5</td>
+          <td rowspan="3" class="c">
+            <a href="https://cs.oberlin.edu/~cs150/lab-2/">Lab 2 - In the Loop</a><br/><br/>
+            <a href="">Reflection 2</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Oct 13</br>(Add/Drop)</td>
+          <td>Nested For Loops</td>
+          <td>4.7</td>
+        </tr>
+        <tr>
+          <td>Oct 15</td>
+          <td>Boolean Expressions & Conditionals</td>
+          <td>7.1-7.5</td>
+        </tr>
+        <!-- Week 3 -->
+        <tr>
+          <td rowspan="3">3</td>
+          <td>Oct 18</td>
+          <td>Modules & Graphics</td>
+          <td>5.1-5.4</td>
+          <td rowspan="3" class="c">
+            <a href="https://cs.oberlin.edu/~cs150/lab-3/">Lab 3 - Get the Picture</a><br/><br/>
+            <a href="">Reflection 3</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Oct 20</td>
+          <td>Debugging & Exceptions</td>
+          <td>1.6-1.10</br>3.2-3.4</td>
+        </tr>
+        <tr>
+          <td>Oct 22</td>
+          <td>While Loops</td>
+          <td>8.3</td>
+        </tr>
+        <!-- Week 4 -->
+        <tr>
+          <td rowspan="3">4</td>
+          <td>Oct 25</td>
+          <td>Functions</td>
+          <td>6.1-6.2</br>6.4</td>
+          <td rowspan="3" class="c">
+            <a href="https://cs.oberlin.edu/~cs150/lab-4/">Lab 4 - Image Filters</a><br/><br/>
+            <a href="">Reflection 4</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Oct 27</td>
+          <td>Functions</td>
+          <td>6.6-6.10</td>
+        </tr>
+        <tr>
+          <td>Oct 29</td>
+          <td>Functions & Strings</td>
+          <td>9.3-9.14</td>
+        </tr>
+        <!-- Week 5 -->
+        <tr>
+          <td rowspan="3">5</td>
+          <td>Nov 1</td>
+          <td>Strings & Lists</td>
+          <td>10.1-10.8</td>
+          <td rowspan="3" class="c">
+            <a href="https://cs.oberlin.edu/~cs150/lab-5/">Lab 5 - Manipulation</a><br/><br/>
+            <a href="">Reflection 5</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Nov 3</td>
+          <td>Lists Manipulation</td>
+          <td>10.10-10.14</br>10.16-10.19</td>
+        </tr>
+        <tr>
+          <td>Nov 4</td>
+          <td>Lists & Tuples</td>
+          <td>10.26-10.29</td>
+        </tr>
+        <!-- Week 6 -->
+        <tr>
+          <td rowspan="3">6</td>
+          <td>Nov 8</td>
+          <td>Dictionaries & Sets</td>
+          <td>12.1-12.3</td>
+          <td rowspan="3" class="c">
+            <a href="https://cs.oberlin.edu/~cs150/lab-6/">Lab 6 - Concordance</a><br/><br/>
+            <a href="">Reflection 6</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Nov 10</td>
+          <td>Files</td>
+          <td>11.1-11.6</td>
+        </tr>
+        <tr>
+          <td>Nov 12</td>
+          <td>Data Structures</td>
+          <td></td>
+        </tr>
+        <!-- Week 7 -->
+        <tr>
+          <td rowspan="3">7</td>
+          <td>Nov 15</td>
+          <td>Recursion</td>
+          <td>16.1-16.3</td>
+          <td rowspan="3" class="c">
+            <a href="https://cs.oberlin.edu/~cs150/lab-7/">Lab 7 - Fractals</a><br/><br/>
+            <a href="">Reflection 7</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Nov 17</td>
+          <td>Recursion</td>
+          <td>16.5-16.6</td>
+        </tr>
+        <tr>
+          <td>Nov 19</td>
+          <td>Recursion</td>
+          <td></td>
+        </tr>
+        <!-- Week 8 -->
+        <tr>
+          <td rowspan="3">8</td>
+          <td>Nov 22</td>
+          <td><strong>No Class (Thanksgiving Break)</strong></td>
+          <td></td>
+          <td rowspan="3"></td>
+        </tr>
+        <tr>
+          <td>Nov 24</td>
+          <td><strong>No Class (Thanksgiving Break)</strong></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Nov 26</td>
+          <td><strong>No Class (Thanksgiving Break)</strong></td>
+          <td></td>
+        </tr>
+        <!-- Week 9 -->
+        <tr>
+          <td rowspan="3">9</td>
+          <td>Nov 29</td>
+          <td>Classes</td>
+          <td>17.1-17.4</br>17.6</td>
+          <td rowspan="3" class="c">
+            <a href="https://cs.oberlin.edu/~cs150/lab-8/">Lab 8 - Let's Make Music</a><br/><br/>
+            <a href="">Reflection 8</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Dec 1</td>
+          <td>Classes</td>
+          <td>17.5</br>17.7-17.9</td>
+        </tr>
+        <tr>
+          <td>Dec 3</td>
+          <td>Classes</td>
+          <td>18.1-18.4</td>
+        </tr>
+        <!-- Week 10 -->
+        <tr>
+          <td rowspan="3">10</td>
+          <td>Dec 6</br>(P/NP)</td>
+          <td>Classes</td>
+          <td></td>
+          <td rowspan="3" class="c">
+            <a href="https://cs.oberlin.edu/~cs150/lab-9/">Lab 9 - Critters</a><br/><br/>
+            <a href="">Reflection 9</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Dec 8</td>
+          <td>Inheritance</td>
+          <td>19.1-19.4</td>
+        </tr>
+        <tr>
+          <td>Dec 10</td>
+          <td>Inheritance</td>
+          <td>19.7</td>
+        </tr>
+        <!-- Week 11 -->
+        <tr>
+          <td rowspan="3">11</td>
+          <td>Dec 13</td>
+          <td>Order Notation</td>
+          <td></td>
+          <td rowspan="3" class="c">
+            <a href="https://cs.oberlin.edu/~cs150/lab-10/">Lab 9 - Critters (continued)</a><br/><br/>
+            <a href="">Reflection 9</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Dec 15</td>
+          <td>Sorting</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Dec 17</td>
+          <td>Sorting</td>
+          <td></td>
+        </tr>
+        <!-- Week 12 -->
+        <tr>
+          <td rowspan="3">12</td>
+          <td>Dec 20</td>
+          <td>Order Notation</td>
+          <td></td>
+          <td rowspan="3"></td>
+        </tr>
+        <tr>
+          <td>Dec 22</td>
+          <td>Tournament</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Dec 24</td>
+          <td><strong>No Class (Winter Break)</strong></td>
+          <td></td>
+        </tr>
+        <!-- Week 13 -->
+        <tr>
+          <td rowspan="3">13</td>
+          <td>Dec 27</td>
+          <td><strong>No Class (Winter Break)</strong></td>
+          <td></td>
+          <td rowspan="3"></td>
+        </tr>
+        <tr>
+          <td>Dec 29</td>
+          <td><strong>No Class (Winter Break)</strong></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Dec 31</td>
+          <td><strong>No Class (Winter Break)</strong></td>
+          <td></td>
+        </tr>
+        <!-- Week 14 -->
+        <tr>
+          <td rowspan="3">14</td>
+          <td>Jan 3</td>
+          <td>Final Project Discussion</td>
+          <td></td>
+              <td rowspan="3" class="c">
+            <a href="https://cs.oberlin.edu/~cs150/final-project/">Final Project</a><br/><br/>
+          </td>
+        </tr>
+        <tr>
+          <td>Jan 5</td>
+          <td>Advanced Topics</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Jan 7</td>
+          <td>Advanced Topics</td>
+          <td></td>
+        </tr>
+        <!-- Week 15 -->
+        <tr>
+          <td rowspan="3">15</td>
+          <td>Jan 10</td>
+          <td>Final Project Check-In</td>
+          <td></td>
+              <td rowspan="3" class="c">
+            <a href="https://cs.oberlin.edu/~cs150/final-project/">Final Project</a><br/><br/>
+          </td>
+          </td>
+        </tr>
+        <tr>
+          <td>Jan 12</td>
+          <td>Research Overview</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Jan 14</td>
+          <td>Wrap Up</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="5" class="c"><strong><a href="#final-project">Final Project</a><br />Due: Monday, Jan 25
+              at 11:00 AM</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <div class="break">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 10">
+      <circle cx="10" cy="5" r="2"/>
+      <circle cx="25" cy="5" r="2"/>
+      <circle cx="40" cy="5" r="2"/>
+    </svg>
+  </div>
+  <section id="syllabus" class="container">
+    <h2>syllabus</h2>
+    <h3>course overview</h3>
+    <p>
+      CSCI 150 provides an introduction to problem solving and algorithmic thinking through computer science, with programming used as a method for implementing solutions to problems. The course covers fundamentals of computer programming including data types, variables, expressions, statements, control structures, arrays, and recursion. It also introduces object-oriented concepts including classes, methods, inheritance, and polymorphism. Python is used as a programming language to highlight and demonstrate these fundamentals. No prior programming experience is expected or needed.
+    </p>
+    <h3>course objectives</h3>
+    <ul>
+      <li>
+        Gain familiarity with the fundamentals of computer science as a problem-solving discipline
+      </li>
+      <li>
+        Learn to think about solutions from an algorithmic perspective
+      </li>
+      <li>
+        Practice specifying problems and designing algorithms to solve problems
+      </li>
+      <li>
+        Acquire experience implementing solutions to problems using the Python programming language through lab assignments
+      </li>
+      <li>
+        Understand how computer science relates to and can interact with other disciplines
+      </li>
+      <li>
+        Experience the fun of computer science!
+      </li>
+    </ul>
+    <h3>course website and textbook</h3>
+    <p>
+      Information will be primarily communicated through <a href="https://www.blairrossetti.com/courses/csci-150/fall-2021/">this website</a>, <a href="https://blackboard.oberlin.edu/" target="_blank" rel="noopener noreferrer">Blackboard</a>, and the <a href="https://cs.oberlin.edu/~cs150" target="_blank" rel="noopener noreferrer">lab website</a>. Please check each regularly for announcements, class schedule, lab assignments, etc.
+    </p>
+    <p>
+      For this class, we will be using a free Runestone interactive textbook. To register for this book, do the following:
+      <ol>
+        <li>
+          Go to <a href="https://runestone.academy/" target="_blank" rel="noopener noreferrer">runestone.academy</a>
+        </li>
+        <li>
+          Click “Sign Up”
+        </li>
+        <li>
+          Fill in the required information and enter "csci150-03-f21" (without quotes) as the course name
+        </li>
+      </ol>
+    </p>
+    <p>
+      We will have assigned readings and interactive activities from this book due most classes. Activities must be completed before your assigned lecture session.
+    </p>
+    <h3>class participation</h3>
+    <p>
+      Active participation in this class will be an important process in your learning. Participation will take on several forms. First, questions will be asked during class periods using <a href="https://oberlin.bncollege.com/shop/oberlin/textbook/iclickerclassresponse-sysnew-only-600008297355?sectionId=104110496&displayStoreId=43060" target="_blank" rel="noopener noreferrer">iClickers</a>, and students are expected to participate by responding with their best guesses as to the correct answers. You will not be graded based on the correctness of your responses, so please just provide your best guess as to the correct answer. Second, we will have many small group discussions in class, where we work together to develop solutions to problems (in the forms of algorithms and code), as well as discuss important topics related to computer science and technology.
+    </p>
+    <p>
+      If you become ill and need to miss class, alternative arrangements can be made for your participation. Please reach out to me by email if you need to miss class. Slides from class will be posted to Blackboard for you to view asynchronously.
+    </p>
+    <p>
+      Students are responsible for their own participation and may not respond for other students.
+    </p>
+    <h3>weekly reflections</h3>
+    <p>
+      To help students connect with the material we will learn in class, you will be asked to complete short weekly reflections each week. These reflections are designed to give you the opportunity and space to reflect on (1) what you found challenging during this week, (2) what you would like to know more about, and (3) how you’re doing. These reflections will be short (around three sentences) and should take about 5 minutes per week.
+    </p>
+    <p>
+      There will also be a short questionnaire the first week of the course that gives you an opportunity to reflect on your initial thoughts about computer science and this course, as well as to help me get to know each one of you. The questionnaire will be graded based on participation—if you turn it in on time with every question answered, you will automatically receive full credit. There are no right or wrong answers to many of these questions, so please do not worry about correctness!
+    </p>
+    <h3>lab assignments</h3>
+    <p>
+      Throughout the semester, you will have the opportunity to practice the course material through hands-on lab assignments. There will be around 10 lab assignments in total. 
+      Each lab assignment consists of (1) a pair-programming warmup, to be completed in the weekly lab session, and (2) an individual programming component, to be completed by yourself outside of class. Please expect to spend around 7-9 hours per week including both the scheduled lab period (Wednesday 2:30-4:30PM) and your own time. These lab assignments are the homework assignments for the course.      
+    </p>
+    <p>
+      Both a student lab helper and I will be available in each lab period to support you and provide assistance while you work on the warmup. Additional lab helper hours are also provided on Monday, Wednesday, and Thursday evenings, as well as Saturday and Sunday afternoons.
+    </p>
+    <h3>exams</h3>
+    <p>
+      There will be no exams in this course.      
+    </p>
+    <h3>final project</h3>
+    <p>
+      In place of a final exam, we will instead have a final project. During the final project, students will work in groups to explore their shared interests in computer science. Final projects can take on several forms, including but not necessarily limited to (1) developing a software program (e.g., a tool the group finds useful, a game, etc.), (2) studying existing solutions to problems of interest (e.g., exploring data science algorithms from established APIs), and (3) researching important topics in computer science (e.g., ethical implications of using algorithms for social decision making).
+    </p>
+    <p>
+      The project will require equal participation by all members of the group.
+    </p>
+    <p>
+      The final project will be due during the exam period.
+    </p>
+    <h3>grading</h3>
+    <p>
+      Final grades will be determined based on your scores on the labs, final project, reading exercises, weekly reflections, class participation, and initial questionnaire as follows:
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="c">Initial Questionnaire</td>
+          <td class="c">2%</td>
+        </tr>
+        <tr>
+          <td class="c">Weekly Reflections</td>
+          <td class="c">5%</td>
+        </tr>
+        <tr>
+          <td class="c">Reading Exercises</td>
+          <td class="c">10%</td>
+        </tr>
+        <tr>
+          <td class="c">Class Participation</td>
+          <td class="c">10%</td>
+        </tr>
+        <tr>
+          <td class="c">Final Project</td>
+          <td class="c">15%</td>
+        </tr>
+        <tr>
+          <td class="c">Lab Assignments</td>
+          <td class="c">58%</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>late homework policy</h3>
+    <p>
+      Unless otherwise specified, each lab will be due at <b>11:59PM on Tuesday</b> night of the week following the start of the lab assignment. Late submissions are strongly discouraged. To account for unforeseen circumstances, you are allotted four late days, total for the semester, to complete a lab assignment (more than one may be used per assignment). These will be automatically deducted by the lab graders until they have been used up.
+    </p>
+    <p>
+      Otherwise, late submissions will be penalized 25% in the first 24 hours after the deadline, and an additional 25% for each additional day late after that. If for any reason you will need to turn in a significant number of late labs, please meet with me to discuss it.
+    </p>
+    <h3>accessibility</h3>
+    <p>
+      I am committed to making this class accessible to all students. If you have a disability that may impact your work in this class and require accommodations, please see me. Please also visit <a href="https://www.oberlin.edu/accessibility-services" target="_blank" rel="noopener noreferrer">Student Accessibility Services</a> at the Center for Student Success so that we may arrange appropriate accommodations.
+    </p>
+    <h3>tutoring</h3>
+    <p>
+      The CS department hosts drop-in peer tutoring hours in both CS labs in the evenings and on weekends (these are called “lab helper hours” for 150). If you would also like a one-on-one tutor, Oberlin College provides free tutors for this course. If you would like a tutor, please contact Donna Allen from Student Academic Services in Peters 118.
+    </p>
+    <h3>code of conduct</h3>
+    <p>
+      Both Oberlin College and I personally value the diversity of perspective that each of you bring to this classroom and our study of computer science together. In this class, we must all commit to fostering a safe, inclusive and welcoming environment which will allow all of us to learn. Please respect the competence and hard work of your colleagues in this classroom. If you are made to feel uncomfortable in class or while working on class material, please notify me so we can take steps to address the situation. Students who are disruptive to class and our learning community will face consequences, including potentially being removed from the course.
+    </p>
+    <h3>expectations</h3>
+    <p>
+      In this class, you will be expected to work actively to construct your own understanding of the topics at hand, with the readily available help of myself and your classmates. Many of the concepts you learn and problems you work will be new to you and ask you to stretch your thinking. It is completely natural and common to experience frustration and failure before you experience understanding. This is part of the normal learning process. You are supported on all sides by me and your classmates. But no student is exempt from the process and the hard work that it entails.
+    </p>
+    <h3>academic honesty</h3>
+    <p>
+      Students are expected to adhere to the Oberlin College Honor Code. Any violations will be reported to the Honor Code Committee.
+    </p>
+    <p>
+      On lab assignments, you may work with a partner for the Warmup section only. All other sections of the lab assignment must be completed on your own. In general, feel free to discuss the assignments with your peers, including general approaches to solving the problem (e.g., "think about using a loop to iterate over every element of a list", "a modulus operation lets you keep counting between 1 and 4"), but you should never share code, nor describe the exact code needed to solve the assignment. If you do discuss a lab with another student, please indicate those students in a README file within your submission.
+    </p>
+    <p>
+      You are always allowed to use the textbook, and any resources provided by me. You are not allowed to use any other sources except when specified in the assignment. Plagiarism and cheating, as in copying the work of others, paying others to do your work, etc, is obviously prohibited, and will be reported. We will be running MOSS, an automated plagiarism detection tool, on submissions.
+    </p>
+    <p>
+      Typically, honor code violations occur due to some combination of stress, confusion, or anxiety. In these circumstances, you are strongly encouraged to reach out to me; there are always better solutions that we can work out together. Furthermore, if you have any questions about what is permitted and what is not, please feel free to ask.
+    </p>
+    <p>
+      For every assignment, students must indicate whether they followed the Honor Code in completing the assignment. If so, students should end each assignment by writing:
+    </p>
+    <p>
+      <i>I have adhered to the Honor Code in this assignment.</i>          
+    </p>
+    <h3>advice for success</h3>
+    <p>
+      College is challenging for everyone in different ways. Oberlin has numerous resources to help you navigate this experience! If you need help, please reach out to me. I am happy to help connect you to the many different resources available (e.g., SHARE, PALS, Dean’s Office). Finally, a reminder that faculty at Oberlin are mandatory reporters for issues which fall under Title XI provisions.
+    </p>
+    <h3>acknowledgments</h3>
+    <p>
+      The content in this course is gratefully adapted from previous iterations of 150 at Oberlin, most recently from courses led by Cynthia Taylor and Adam Eck.
+    </p>
+  </section>
+  <footer id="footer">
+    <p><strong>Made by me.</strong></p>
+    <p>Blair Rossetti © 2021. All rights reserved.</p>
+  </footer>
+</body>
+</html>
