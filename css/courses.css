@@ -212,6 +212,7 @@ table th.r {
 
 #syllabus {
   text-align: left;
+  margin-bottom: 4rem;
   padding: 0px 1rem;
   z-index: 10;
 }
