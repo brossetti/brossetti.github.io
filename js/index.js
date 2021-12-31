@@ -2,8 +2,8 @@
 const R_EARTH = 1;                   //radius of the Earth (AU)
 const R_MOON = 0.2727;               //normalized radius of the Moon
 const S_SATELLITE = 0.45;            //normalized side dimension of the Satellite
-const ALTITUDE = 0.3;                //normalized distance from Satellite to Earth
-const DIST_EARTH_TO_MOON = 10;        //normalized distance from Earth to Moon
+const ALTITUDE = 0.4                 //normalized distance from Satellite to Earth
+const DIST_EARTH_TO_MOON = 10;       //normalized distance from Earth to Moon
 const ARCSEC = 2 * Math.PI / 60;
 const ARCMSEC = 2 * Math.PI / 60000;
 
@@ -37,10 +37,12 @@ const satellite = {
 //======== Assets ========//
 const imgEarth = new Image();
 const imgMoon = new Image();
-const imgSatellite = new Image();
+const imgSatelliteOn = new Image();
+const imgSatelliteOff = new Image();
 imgEarth.src = './img/earth.png';
 imgMoon.src = './img/moon.png';
-imgSatellite.src = './img/csm.png';
+imgSatelliteOn.src = './img/hubble-on.png';
+imgSatelliteOff.src = './img/hubble-off.png';
 
 //========= Main =========//
 const canvas = document.getElementById('space');
@@ -145,7 +147,11 @@ function draw() {
     ctx.translate(earth.x, earth.y);
     ctx.rotate(satellite.theta);
     ctx.translate(0, -satellite.r);
-    ctx.drawImage(imgSatellite, -satellite.s/2, -satellite.s/2, satellite.s, satellite.s);
+    if (paused) {
+        ctx.drawImage(imgSatelliteOff, -satellite.s/2, -satellite.s/2, satellite.s, satellite.s);
+    } else {
+        ctx.drawImage(imgSatelliteOn, -satellite.s/2, -satellite.s/2, satellite.s, satellite.s);
+    }
     ctx.restore();
 
     // update aladin
