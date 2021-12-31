@@ -10,6 +10,7 @@ body {
 	background: radial-gradient(at top left, rgba(62,65,95,1) 0%, rgba(46,44,59,1) 20%);
 	background-image: url("../img/stars.svg"),
 	radial-gradient(at top left, rgba(62,65,95,1) 0%, rgba(46,44,59,1) 20%);
+	text-rendering: optimizeLegibility;
 }
 
 #space {
@@ -19,53 +20,95 @@ body {
 /* Banner */
 #banner {
 	position: fixed;
-	top: 35%;
-	width: 100%;
-	color: white;
+	top: 32%;
 	text-align: center;
+	width: 100%;
+	color: rgba(255, 255, 255, 0.90);
 	font-family: 'VT323', 'Courier New', Courier, monospace; 
 }
-#contact-btns {
-	padding-top: 1rem;
+#banner h1 {
+	margin-bottom: 0.5rem;
+	font-size: 2.5rem;
 }
-#contact-btns a {
+#contact-links {
+	padding-top: 0px;
+}
+#contact-links a {
 	display: inline-block;
-	max-width: 5rem;
+	color: rgba(255, 255, 255, 0.85);
+	text-decoration: none;
+	font-size: 1.5rem;
 	transition: all 0.3s ease-in-out;
 }
-#contact-btns a:hover{
-	transform: scale(1.25);
-}
-#contact-btns svg{
+#contact-links a::before {
+	content: "";
+	position: absolute;
+	display: block;
+	bottom: 0;
+	left: 0;
+	height: 0.1rem;
 	width: 100%;
-	padding: 0px 1rem 0px 1rem;
-	fill: white;
+	background-color: rgba(255, 255, 255, 0.85);
+	transform: scaleX(0);
+	transition: transform 0.3s ease;
+  }
+#contact-links a + a{
+	margin-left: 0.5rem;
+}
+#contact-links a:hover{
+	transform: scale(1.1);
+}
+#contact-links a:hover::before {
+	transform: scaleX(0.75);
+}
+@media screen and (min-width: 40em) {
+	#banner {
+		top: 30%;
+	}
+	#banner h1 {
+		font-size: 3rem;
+	}
+	#contact-links a {
+		font-size: 1.75rem;
+	}
+	#contact-links a + a{
+		margin-left: 1rem;
+	}
+}
+@media screen and (min-width: 64em) {
+	#banner h1 {
+		font-size: 3.25rem;
+	}
+	#contact-links a {
+		font-size: 2rem;
+	}
 }
 
 /* Snapshot Window */
 #snapshot {
 	z-index: 1;
 	position: fixed;
-	height: 25vmin;
-	width: 35vmin;
 	bottom: 1rem;
 	right: 1rem;
+	height: 25vmin;
+	width: 35vmin;
 	background-color: rgba(46,44,59,1);
 	border: 1px solid rgba(255, 255, 255, 0.65);
 }
 #snapshot:before {
+	content:'';
 	z-index: 1;
-    content:'';
 	position: absolute;
-    top:-2px; left:-2px;
-    border: 2px solid rgba(46,44,59,1);
+    top:-2px;
+	left:-2px;
     height: 100%;
     width: 100%;
+	border: 2px solid rgba(46,44,59,1);
     border-radius: 14% / 20%;
 }
 #snapshot:after {
-	z-index: 2;
 	content: '+';
+	z-index: 2;
 	position: absolute;
 	display: flex;
     align-items: center;
@@ -77,15 +120,33 @@ body {
 	font-family: 'Courier New', Courier, monospace;
 	pointer-events: none;
 }
+#instructions {
+	position: fixed;
+	bottom: calc(1rem + 25vmin);
+	right: 1rem;
+	width: 35vmin;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.6);
+	line-height: 1rem;
+	font-size: 1.1rem;
+	font-family: 'VT323', 'Courier New', Courier, monospace;
+}
+@media screen and (min-width: 40em) {
+	#instructions {
+		line-height: 1.4rem;
+		font-size: 1.5rem;
+	}
+}
+
 
 /* Aladin Overrides */
 .aladin-logo-container, .aladin-location, .aladin-fov {
 	visibility: hidden;
 }
 .aladin-maximize {
-	height: 2vmin;
-	width: 2vmin;
 	top: 1vmin;
 	right: 1vmin;
+	height: 2vmin;
+	width: 2vmin;
 	background-size: 2vmin;
 }

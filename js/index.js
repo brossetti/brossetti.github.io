@@ -55,18 +55,21 @@ if (!canvas.getContext) {
 let ctx = canvas.getContext('2d');
 
 // handle controls
-document.addEventListener("keydown", (e) => {e.code == "Space" && snap()}, false);
-document.addEventListener("click", snap, false);
+let paused = true;
+let instructions = true;
+document.addEventListener('keydown', keyHandler, false);
+document.addEventListener('click', clickHandler, false);
 
 // handle canvas sizing
 window.addEventListener('resize', resize);
 window.addEventListener('orientationchange', resize)
 
 // initialize aladin
+let redrawAladin = true;
 let aladin = A.aladin('#snapshot', 
                         {
                             target: 'Bol 10',
-                            survey: "P/DSS2/color",
+                            survey: 'P/DSS2/color',
                             fov: 6,
                             showReticle: false,
                             showZoomControl: false,
@@ -79,6 +82,23 @@ aladin.setFovRange(1, 12)
 // set canvas and begin animation loop
 resize();
 
+//==== Event Handlers ====//
+// start/stop live image when spacebar is pressed
+function keyHandler(e) {
+    if (e.code == 'Space') {
+        snap()
+    }
+}
+
+// start/stop live image when anything except aladin is clicked
+function clickHandler(e) {
+    let element = document.getElementById('snapshot');
+    if (e.target !== element && !element.contains(e.target)) {
+        snap()
+    }
+}
+
+
 //======= Functions ======//
 // converts polar to Cartesian coordinates
 function pol2cart(r, theta) {
@@ -87,10 +107,10 @@ function pol2cart(r, theta) {
 
 // snaps a photo at current location
 function snap() {
-    // const ra = 176 + Math.sign(satellite.theta-Math.PI) * 90;
-    const ra = satellite.theta * 180/Math.PI;
-    const dec = Math.cos(satellite.theta) * 90;
-    aladin.gotoRaDec(ra, dec);
+    paused = !paused;
+    if (instructions) {
+        document.getElementById('instructions').style.visibility = "hidden";
+    }
 }
 
 // updates Satellite position based on current time
@@ -127,6 +147,15 @@ function draw() {
     ctx.translate(0, -satellite.r);
     ctx.drawImage(imgSatellite, -satellite.s/2, -satellite.s/2, satellite.s, satellite.s);
     ctx.restore();
+
+    // update aladin
+    redrawAladin = !redrawAladin
+    if (!paused && redrawAladin) {
+        // const ra = 176 + Math.sign(satellite.theta-Math.PI) * 90;
+        const ra = satellite.theta * 180/Math.PI;
+        const dec = Math.cos(satellite.theta) * 90;
+        aladin.gotoRaDec(ra, dec);
+    }
 }
 
 // updates canvas when resized or orientation changed
