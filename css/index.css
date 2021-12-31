@@ -1,0 +1,91 @@
+html, body { 
+	height: 100%;
+	width:100%;
+	margin: 0;
+	padding: 0;
+}  
+
+body {
+	background: rgb(135, 135, 138);
+	background: radial-gradient(at top left, rgba(62,65,95,1) 0%, rgba(46,44,59,1) 20%);
+	background-image: url("../img/stars.svg"),
+	radial-gradient(at top left, rgba(62,65,95,1) 0%, rgba(46,44,59,1) 20%);
+}
+
+#space {
+	position: absolute;
+}
+
+/* Banner */
+#banner {
+	position: fixed;
+	top: 35%;
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-family: 'VT323', 'Courier New', Courier, monospace; 
+}
+#contact-btns {
+	padding-top: 1rem;
+}
+#contact-btns a {
+	display: inline-block;
+	max-width: 5rem;
+	transition: all 0.3s ease-in-out;
+}
+#contact-btns a:hover{
+	transform: scale(1.25);
+}
+#contact-btns svg{
+	width: 100%;
+	padding: 0px 1rem 0px 1rem;
+	fill: white;
+}
+
+/* Snapshot Window */
+#snapshot {
+	z-index: 1;
+	position: fixed;
+	height: 25vmin;
+	width: 35vmin;
+	bottom: 1rem;
+	right: 1rem;
+	background-color: rgba(46,44,59,1);
+	border: 1px solid rgba(255, 255, 255, 0.65);
+}
+#snapshot:before {
+	z-index: 1;
+    content:'';
+	position: absolute;
+    top:-2px; left:-2px;
+    border: 2px solid rgba(46,44,59,1);
+    height: 100%;
+    width: 100%;
+    border-radius: 14% / 20%;
+}
+#snapshot:after {
+	z-index: 2;
+	content: '+';
+	position: absolute;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	height: 100%;
+	width: 100%;
+	color: rgba(255, 255, 255, 0.65);
+	font-size: 4vmin;
+	font-family: 'Courier New', Courier, monospace;
+	pointer-events: none;
+}
+
+/* Aladin Overrides */
+.aladin-logo-container, .aladin-location, .aladin-fov {
+	visibility: hidden;
+}
+.aladin-maximize {
+	height: 2vmin;
+	width: 2vmin;
+	top: 1vmin;
+	right: 1vmin;
+	background-size: 2vmin;
+}

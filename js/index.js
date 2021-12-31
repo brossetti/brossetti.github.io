@@ -1,0 +1,169 @@
+//====== Constants ======//
+const R_EARTH = 1;                   //radius of the Earth (AU)
+const R_MOON = 0.2727;               //normalized radius of the Moon
+const S_SATELLITE = 0.45;            //normalized side dimension of the Satellite
+const ALTITUDE = 0.3;                //normalized distance from Satellite to Earth
+const DIST_EARTH_TO_MOON = 10;        //normalized distance from Earth to Moon
+const ARCSEC = 2 * Math.PI / 60;
+const ARCMSEC = 2 * Math.PI / 60000;
+
+//======= Objects =======//
+const scene = {
+    originX: NaN,
+    originY: NaN,
+    pxpr: NaN            //pixels per Earth radius
+}
+
+const earth = {
+    x: NaN,
+    y: NaN,
+    r: NaN
+}
+
+const moon = {
+    x: NaN,
+    y: NaN,
+    r: NaN
+}
+
+const satellite = {
+    x: NaN,
+    y: NaN,
+    s: NaN,
+    r: NaN,              //radius of orbit around Earth
+    theta: NaN           //angle relative to vertical (radians)
+}
+
+//======== Assets ========//
+const imgEarth = new Image();
+const imgMoon = new Image();
+const imgSatellite = new Image();
+imgEarth.src = './img/earth.png';
+imgMoon.src = './img/moon.png';
+imgSatellite.src = './img/csm.png';
+
+//========= Main =========//
+const canvas = document.getElementById('space');
+
+// check for canvas
+if (!canvas.getContext) {
+    // TODO: display message for browsers where canvas is not supported
+    throw new Error('Browser does not support a canvas');
+}
+
+// get context
+let ctx = canvas.getContext('2d');
+
+// handle controls
+document.addEventListener("keydown", (e) => {e.code == "Space" && snap()}, false);
+document.addEventListener("click", snap, false);
+
+// handle canvas sizing
+window.addEventListener('resize', resize);
+window.addEventListener('orientationchange', resize)
+
+// initialize aladin
+let aladin = A.aladin('#snapshot', 
+                        {
+                            target: 'Bol 10',
+                            survey: "P/DSS2/color",
+                            fov: 6,
+                            showReticle: false,
+                            showZoomControl: false,
+                            showLayersControl: false,
+                            showGotoControl: false,
+                            showFrame: false
+                        });
+aladin.setFovRange(1, 12)
+
+// set canvas and begin animation loop
+resize();
+
+//======= Functions ======//
+// converts polar to Cartesian coordinates
+function pol2cart(r, theta) {
+    return [r * Math.cos(theta), r * Math.sin(theta)];
+}
+
+// snaps a photo at current location
+function snap() {
+    // const ra = 176 + Math.sign(satellite.theta-Math.PI) * 90;
+    const ra = satellite.theta * 180/Math.PI;
+    const dec = Math.cos(satellite.theta) * 90;
+    aladin.gotoRaDec(ra, dec);
+}
+
+// updates Satellite position based on current time
+function update() {
+    // set angle around Earth
+    const time = new Date();
+    satellite.theta = ARCSEC * time.getSeconds() + ARCMSEC * time.getMilliseconds();
+
+    // convert radius and angle to position
+    const offsetXY = pol2cart(satellite.r, satellite.theta)
+    satellite.x = earth.x + offsetXY[0]
+    satellite.y = earth.y + offsetXY[1]
+}
+
+// draws objects on canvas
+function draw() {
+    // request another animation frame early
+    window.requestAnimationFrame(draw)
+
+    // clear canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // draw earth
+    ctx.drawImage(imgEarth, earth.x - earth.r, earth.y - earth.r, earth.r*2, earth.r*2);
+
+    // draw moon
+    ctx.drawImage(imgMoon, moon.x - moon.r, moon.y - moon.r, moon.r*2, moon.r*2);
+
+    // draw satellite
+    update()
+    ctx.save();
+    ctx.translate(earth.x, earth.y);
+    ctx.rotate(satellite.theta);
+    ctx.translate(0, -satellite.r);
+    ctx.drawImage(imgSatellite, -satellite.s/2, -satellite.s/2, satellite.s, satellite.s);
+    ctx.restore();
+}
+
+// updates canvas when resized or orientation changed
+function resize() {
+    // update canvas and origin
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    scene.originX = canvas.width/2;
+    scene.originY = canvas.height/2;
+
+    // turn up image smoothing
+    ctx.imageSmoothingEnabled = false;
+    ctx.webkitImageSmoothingEnabled = false;
+    ctx.mozImageSmoothingEnabled = false;
+    ctx.msImageSmoothingEnabled = false;
+    ctx.oImageSmoothingEnabled = false;
+
+    // set px per Earth radius and calculate size of objects
+    scene.pxpr = Math.min(canvas.width, canvas.height) / (DIST_EARTH_TO_MOON - R_EARTH - R_MOON);
+    earth.r = R_EARTH * scene.pxpr;
+    moon.r = R_MOON * scene.pxpr;
+    satellite.s = S_SATELLITE * scene.pxpr;
+    satellite.r = ALTITUDE * scene.pxpr + earth.r;
+
+    // determine new Earth and Moon positions
+    const diag = Math.sqrt(canvas.width**2 + canvas.height**2);
+    const radialOffset = DIST_EARTH_TO_MOON * scene.pxpr / 2;
+    const offsetX = radialOffset / diag * canvas.width;
+    const offsetY = radialOffset / diag * canvas.height;
+
+    // set Earth and Moon positions
+    earth.x = scene.originX - offsetX + earth.r;
+    earth.y = scene.originY + offsetY - earth.r;
+
+    moon.x = scene.originX + offsetX - moon.r;
+    moon.y = scene.originY - offsetY + moon.r;
+
+    // redraw
+    draw();
+}
