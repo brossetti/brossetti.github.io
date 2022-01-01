@@ -39,12 +39,14 @@ body {
 }
 #contact-links {
 	padding-top: 0px;
+	text-align: center;
+	/* margin: auto; */
 }
 #contact-links a {
 	display: inline-block;
-	color: rgba(255, 255, 255, 0.85);
+	color: rgba(255, 255, 255, 0.75);
 	text-decoration: none;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	transition: all 0.3s ease-in-out;
 }
 #contact-links a::before {
@@ -55,14 +57,17 @@ body {
 	left: 0;
 	height: 0.1rem;
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.85);
+	background-color: rgba(255, 255, 255, 0.75);
 	transform: scaleX(0);
 	transition: transform 0.3s ease;
   }
-#contact-links a + a{
+#contact-links a + a {
 	margin-left: 0.5rem;
 }
-#contact-links a:hover{
+#contact-links a:last-of-type {
+	margin-right: 0.25rem;
+}
+#contact-links a:hover {
 	transform: scale(1.1);
 }
 #contact-links a:hover::before {
@@ -76,10 +81,13 @@ body {
 		font-size: 3rem;
 	}
 	#contact-links a {
-		font-size: 1.75rem;
+		font-size: 1.6rem;
 	}
-	#contact-links a + a{
+	#contact-links a + a {
 		margin-left: 1rem;
+	}
+	#contact-links a:last-of-type {
+		margin-right: 0.5rem;
 	}
 }
 @media screen and (min-width: 64em) {
@@ -87,7 +95,7 @@ body {
 		font-size: 3.25rem;
 	}
 	#contact-links a {
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 }
 
