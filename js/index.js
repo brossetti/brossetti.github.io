@@ -173,11 +173,11 @@ function resize() {
     scene.originY = canvas.height/2;
 
     // turn up image smoothing
-    ctx.imageSmoothingEnabled = false;
-    ctx.webkitImageSmoothingEnabled = false;
-    ctx.mozImageSmoothingEnabled = false;
-    ctx.msImageSmoothingEnabled = false;
-    ctx.oImageSmoothingEnabled = false;
+    ctx.imageSmoothingEnabled = true;
+    ctx.webkitImageSmoothingEnabled = true;
+    ctx.mozImageSmoothingEnabled = true;
+    ctx.msImageSmoothingEnabled = true;
+    ctx.oImageSmoothingEnabled = true;
 
     // set px per Earth radius and calculate size of objects
     scene.pxpr = Math.min(canvas.width, canvas.height) / (DIST_EARTH_TO_MOON - R_EARTH - R_MOON);
