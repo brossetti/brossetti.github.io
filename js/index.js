@@ -92,10 +92,14 @@ function keyHandler(e) {
     }
 }
 
-// start/stop live image when anything except aladin is clicked
+// start/stop live image when anything except aladin or links are clicked
 function clickHandler(e) {
-    let element = document.getElementById('snapshot');
-    if (e.target !== element && !element.contains(e.target)) {
+    let snapshotWindow = document.getElementById('snapshot');
+    let contactLinks = document.getElementById('contact-links');
+    if (e.target !== snapshotWindow && 
+        e.target !== contactLinks && 
+        !snapshotWindow.contains(e.target) && 
+        !contactLinks.contains(e.target)) {
         snap()
     }
 }

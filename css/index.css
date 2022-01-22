@@ -40,7 +40,6 @@ body {
 #contact-links {
 	padding-top: 0px;
 	text-align: center;
-	/* margin: auto; */
 }
 #contact-links a {
 	display: inline-block;
@@ -152,7 +151,6 @@ body {
 		font-size: 1.5rem;
 	}
 }
-
 
 /* Aladin Overrides */
 .aladin-logo-container, .aladin-location, .aladin-fov {
