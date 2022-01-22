@@ -104,7 +104,6 @@ function clickHandler(e) {
     }
 }
 
-
 //======= Functions ======//
 // converts polar to Cartesian coordinates
 function pol2cart(r, theta) {
