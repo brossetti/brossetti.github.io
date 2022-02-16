@@ -14,7 +14,7 @@
 
   <!-- custom -->
   <link rel="stylesheet" href="../../../css/base.css">
-  <link rel="stylesheet" href="../../../css/courses.css">
+  <link rel="stylesheet" href="./index.css">
   <script defer src="../../../js/index.js"></script>
 
   <meta name="theme-color" content="#5b5f97">
@@ -35,8 +35,6 @@
       <a href="#schedule">Schedule</a>
       <span>/</span>
       <a href="#syllabus">Syllabus</a>
-      <span>/</span>
-      <a href="https://cs.oberlin.edu/~cs150/">Labs</a>
     </nav>
   </header>
   <section id="banner">
@@ -50,7 +48,7 @@
   </section>
   <section id="hello" class="container">
     <h2>Hello, Class!</h2>
-    <p>Welcome to CSCI 353! This course is all about the fundamentals of computer programming. It's about solving problems, being creative, and building things... <i>digital things</i>. Sometimes our stuff will break. When it does, we'll learn how to fix it. That's computer science. Let's do this!</p>
+    <p>Welcome to CSCI 353! This course is all about the fundamentals of computer vision. Together we'll learn how to manipulate and extract information from images. We'll study how the human brain <i>"sees"</i> the world, and then we'll use that knowledge to make computers do the same. But let's be real, we're all here to write code and make pretty pictures. Let's do this!</p>
   </section>
   <div class="break">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 10">
@@ -61,11 +59,11 @@
   </div>
   <section id="details" class="container">
     <p>
-      <b>Lecture Time:</b> 9:00-9:50AM MWF</br>
+      <b>Lecture Time:</b> 9:00-9:50am MWF</br>
       <b>Location:</b> King 227
     </p>
     <p>
-      <b>Office Hours:</b> 11:00AM-12:00PM M & 10:00-11:00AM Th</br>
+      <b>Office Hours:</b> 1:00-2:00pm M & 10:00-11:00am T</br>
       <b>Location:</b> King 229
     </p>
   </section>
@@ -81,327 +79,118 @@
     <table>
       <thead>
         <tr>
-          <th colspan="2">Date</th>
+          <th>Wk</th>
           <th>Topic</th>
           <th>Reading</th>
+          <th>Journal Club</th>
           <th>Assignment</th>
         </tr>
       </thead>
       <tbody>
-        <!-- Week 1 -->
         <tr>
-          <td rowspan="3">1</td>
-          <td>Oct 4</td>
-          <td>Hello, Class!</td>
+          <td class="c">0</td>
+          <td>Welcome!</td>
           <td></td>
-          <td rowspan="3" class="c">
-            <a href="https://cs.oberlin.edu/~cs150/pre-lab/">Pre-Lab - Getting Ready</a><br/><br/>
-            <a href="https://cs.oberlin.edu/~cs150/lab-1/">Lab 1 - Hello, Class!</a><br/><br/>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRbr63jJIXXjsnL4O2yRcxnCB3bhYYNgkQm8KoaVwiPCUkqg/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Questionnaire</a><br/><br/>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdj9ZjnlIn0eWZVEYqsBQc9Ia9nTrzwjcELUHq1MavXF34DxA/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Week 1 Reflection</a>
-
-          </td>
-        </tr>
-        <tr>
-          <td>Oct 6</td>
-          <td>Variables, Expressions, & Assignments</td>
-          <td>2.4-2.6<br/>2.9-2.11</td>
-        </tr>
-        <tr>
-          <td>Oct 8</td>
-          <td>Data Types</td>
-          <td>2.2-2.3<br/>2.7-2.8</td>
-        </tr>
-        <!-- Week 2 -->
-        <tr>
-          <td rowspan="3">2</td>
-          <td>Oct 11</td>
-          <td>For Loops</td>
-          <td>4.4-4.5</td>
-          <td rowspan="3" class="c">
-            <a href="https://cs.oberlin.edu/~cs150/lab-2/">Lab 2 - In the Loop</a><br/><br/>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdFJp4SDY7EOPwn1M3G4PCa2EHi9hfb0a1vKixbnKS0SqhqyA/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Week 2 Reflection</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Oct 13</br>(Add/Drop)</td>
-          <td>Nested For Loops</td>
-          <td>4.7</td>
-        </tr>
-        <tr>
-          <td>Oct 15</td>
-          <td>Boolean Expressions & Conditionals</td>
-          <td>7.1-7.5</td>
-        </tr>
-        <!-- Week 3 -->
-        <tr>
-          <td rowspan="3">3</td>
-          <td>Oct 18</td>
-          <td>Modules & Graphics</td>
-          <td>5.1-5.4</td>
-          <td rowspan="3" class="c">
-            <a href="https://cs.oberlin.edu/~cs150/lab-3/">Lab 3 - Get the Picture</a><br/><br/>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqkzD_Cd4GWFMenuhTFMNuA3khrLP0Hin9Mm6703OnthM5_Q/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Week 3 Reflection</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Oct 20</td>
-          <td>Debugging & Exceptions</td>
-          <td>1.6-1.10</br>3.2-3.4</td>
-        </tr>
-        <tr>
-          <td>Oct 22</td>
-          <td>While Loops</td>
-          <td>8.3</td>
-        </tr>
-        <!-- Week 4 -->
-        <tr>
-          <td rowspan="3">4</td>
-          <td>Oct 25</td>
-          <td>Functions</td>
-          <td>6.1-6.2</br>6.4</td>
-          <td rowspan="3" class="c">
-            <a href="https://cs.oberlin.edu/~cs150/lab-4/">Lab 4 - Image Filters</a><br/><br/>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdg_qlc7k-UKY69prJQQUIhz6eRHeLvqcQocVof63uMx7ZbPw/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Week 4 Reflection</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Oct 27</td>
-          <td>Functions</td>
-          <td>6.6-6.10</td>
-        </tr>
-        <tr>
-          <td>Oct 29</td>
-          <td>Functions & Strings</td>
-          <td>9.3-9.14</td>
-        </tr>
-        <!-- Week 5 -->
-        <tr>
-          <td rowspan="3">5</td>
-          <td>Nov 1</td>
-          <td>Strings & Lists</td>
-          <td>10.1-10.8</td>
-          <td rowspan="3" class="c">
-            <a href="https://cs.oberlin.edu/~cs150/lab-5/">Lab 5 - Manipulation</a><br/><br/>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMnEanYaPxKTvRrPeAK4ffK3ODX-Dj0K01IKFkEZP3yZLZIQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Week 5 Reflection</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Nov 3</td>
-          <td>List Manipulation</td>
-          <td>10.10-10.14</br>10.16-10.19</td>
-        </tr>
-        <tr>
-          <td>Nov 5</td>
-          <td>Lists & Tuples</td>
-          <td>10.26-10.29</td>
-        </tr>
-        <!-- Week 6 -->
-        <tr>
-          <td rowspan="3">6</td>
-          <td>Nov 8</td>
-          <td>Dictionaries & Sets</td>
-          <td>12.1-12.3</td>
-          <td rowspan="3" class="c">
-            <a href="https://cs.oberlin.edu/~cs150/lab-6/">Lab 6 - Concordance</a><br/><br/>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNU5yLw87JOOFaHmhcYlwFZKLY6qyhb76mR7xdZkimLpE-_g/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Week 6 Reflection</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Nov 10</td>
-          <td>Files</td>
-          <td>11.1-11.6</td>
-        </tr>
-        <tr>
-          <td>Nov 12</td>
-          <td>Data Structures</td>
           <td></td>
-        </tr>
-        <!-- Week 7 -->
-        <tr>
-          <td rowspan="3">7</td>
-          <td>Nov 15</td>
-          <td>Recursion</td>
-          <td>16.1-16.3</td>
-          <td rowspan="3" class="c">
-            <a href="https://cs.oberlin.edu/~cs150/lab-7/">Lab 7 - Fun with Recursion</a><br/><br/>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScIQUKp_jVoatGqFIvrA7Nu03P-jUOByrkDExgRdAPQrXjDYQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Week 7 Reflection</a>
-          </td>
-        </tr>
-        <tr>
-          <td>Nov 17</td>
-          <td>Recursion</td>
-          <td>16.5-16.6</td>
-        </tr>
-        <tr>
-          <td>Nov 19</td>
-          <td>Recursion</td>
-          <td></td>
-        </tr>
-        <!-- Week 8 -->
-        <tr>
-          <td rowspan="3">8</td>
-          <td>Nov 22</td>
-          <td><strong>No Class (Thanksgiving Break)</strong></td>
-          <td></td>
-          <td rowspan="3"></td>
-        </tr>
-        <tr>
-          <td>Nov 24</td>
-          <td><strong>No Class (Thanksgiving Break)</strong></td>
           <td></td>
         </tr>
         <tr>
-          <td>Nov 26</td>
-          <td><strong>No Class (Thanksgiving Break)</strong></td>
-          <td></td>
-        </tr>
-        <!-- Week 9 -->
-        <tr>
-          <td rowspan="3">9</td>
-          <td>Nov 29</td>
-          <td>Classes</td>
-          <td>17.1-17.4</br>17.6</td>
-          <td rowspan="3" class="c">
-            <a href="https://cs.oberlin.edu/~cs150/lab-8/">Lab 8 - Let's Make Music</a><br/><br/>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSejMA0ztrnUebRsZJuVEGwpcaNGPbmbicLZcsn36VVKt0KP0w/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Week 9 Reflection</a>
-          </td>
+          <td class="c">1</td>
+          <td>Image Capture</td>
+          <td class="c">Chp 2, Szeliski</td>
+          <td class="c"></td>
+          <td class="c">Questionnaire</br>due 2/25 at 5pm</td>
         </tr>
         <tr>
-          <td>Dec 1</td>
-          <td>Classes</td>
-          <td>17.5</br>17.7-17.9</td>
+          <td class="c">2</td>
+          <td>Image Processing</td>
+          <td class="c">Chp 3, Szeliski</td>
+          <td class="c"><a href="https://doi.org/10.1109/CVPR.2005.38" target="_blank" rel="noopener noreferrer">Buades et. al, 2005</a></td>
+          <td class="c"></td>
         </tr>
         <tr>
-          <td>Dec 3</td>
-          <td>Classes</td>
-          <td>18.1-18.4</td>
-        </tr>
-        <!-- Week 10 -->
-        <tr>
-          <td rowspan="3">10</td>
-          <td>Dec 6</br>(P/NP)</td>
-          <td>Classes</td>
-          <td></td>
-          <td rowspan="3" class="c">
-            <a href="https://cs.oberlin.edu/~cs150/lab-9/">Lab 9 - Critters</a><br/><br/>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSespch1DBPmueVpfyk8AQ44UwNwIITbBv2KNOwpBK6RqJAY6A/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Week 10 Reflection</a>
-          </td>
+          <td class="c">3</td>
+          <td>Optimization</td>
+          <td class="c">Chp 4, Szeliski</td>
+          <td class="c"><a href="https://doi.org/10.1145/1186562.1015780" target="_blank" rel="noopener noreferrer">Levin et. al, 2004</a></td>
+          <td class="c">Mini Project 1</td>
         </tr>
         <tr>
-          <td>Dec 8</td>
-          <td>Inheritance</td>
-          <td>19.1-19.4</td>
+          <td class="c">4</td>
+          <td>Compressed Sensing</td>
+          <td class="c"></td>
+          <td class="c"><a href="https://doi.org/10.1109/MSP.2007.914730" target="_blank" rel="noopener noreferrer">Duarte et. al, 2008</a></td>
+          <td class="c"></td>
         </tr>
         <tr>
-          <td>Dec 10</td>
-          <td>Inheritance</td>
-          <td>19.7</td>
-        </tr>
-        <!-- Week 11 -->
-        <tr>
-          <td rowspan="3">11</td>
-          <td>Dec 13</td>
-          <td>Sorting</td>
-          <td><a href="https://runestone.academy/runestone/books/published/pythonds/SortSearch/toctree.html" target="_blank" rel="noopener noreferrer">6.6-6.8</a></td>
-          <td rowspan="3" class="c">
-            <a href="https://cs.oberlin.edu/~cs150/lab-9/">Lab 9 - Critters (continued)</a><br/><br/>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScbPE71fA44GnRnNnWZrBKR6W5rke3bwmPBv0jk_mIhVJijdQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Week 11 Reflection</a>
-          </td>
+          <td class="c">5</td>
+          <td>Feature Detection & Matching</td>
+          <td class="c">Chp 7, Szeliski</td>
+          <td class="c"><a href="https://doi.org/10.1023/B:VISI.0000029664.99615.94" target="_blank" rel="noopener noreferrer">Lowe, 2004</a></td>
+          <td class="c"></td>
         </tr>
         <tr>
-          <td>Dec 15</td>
-          <td>Sorting</td>
-          <td><a href="https://runestone.academy/runestone/books/published/pythonds/SortSearch/toctree.html" target="_blank" rel="noopener noreferrer">6.9-6.10</a></td>
+          <td class="c">6</td>
+          <td>Registration & Stitching</td>
+          <td class="c">Chp 8, Szeliski</td>
+          <td class="c"><a href="https://doi.org/10.1145/358669.358692" target="_blank" rel="noopener noreferrer">Fischler & Bolles, 1981</a></td>
+          <td class="c">Mini Project 2</br>Project Proposal Due</td>
         </tr>
         <tr>
-          <td>Dec 17</td>
-          <td>Sorting</td>
-          <td><a href="https://runestone.academy/runestone/books/published/pythonds/SortSearch/toctree.html" target="_blank" rel="noopener noreferrer">6.11-6.12</a></td>
-        </tr>
-        <!-- Week 12 -->
-        <tr>
-          <td rowspan="3">12</td>
-          <td>Dec 20</td>
-          <td>Order Notation</td>
-          <td><a href="https://runestone.academy/runestone/books/published/pythonds/AlgorithmAnalysis/toctree.html" target="_blank" rel="noopener noreferrer">3.2-3.3</a></td>
-          <td rowspan="3" class="c">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScMuwu2xVp7_rn1Vy3_T31-JNKAyJh2nYvEvdocI9lM_MsCxw/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Critter Tournament Upload</a>
-          </td>
+          <td class="c">7</td>
+          <td colspan="4"><b>Break</b></td>
         </tr>
         <tr>
-          <td>Dec 22</td>
-          <td>Tournament</td>
-          <td></td>
+          <td class="c">8</td>
+          <td>Motion Estimation</td>
+          <td class="c">Chp 9, Szeliski</td>
+          <td class="c"><a href="https://www.ri.cmu.edu/pub_files/pub3/lucas_bruce_d_1981_2/lucas_bruce_d_1981_2.pdf" target="_blank" rel="noopener noreferrer">Lucas & Kanade, 1981</a></td>
+          <td class="c"></td>
         </tr>
         <tr>
-          <td>Dec 24</td>
-          <td><strong>No Class (Winter Break)</strong></td>
-          <td></td>
-        </tr>
-        <!-- Week 13 -->
-        <tr>
-          <td rowspan="3">13</td>
-          <td>Dec 27</td>
-          <td><strong>No Class (Winter Break)</strong></td>
-          <td></td>
-          <td rowspan="3"></td>
+          <td class="c">9</td>
+          <td>Deblurring</td>
+          <td class="c">Chp 10, Szeliski</td>
+          <td class="c"><a href="https://doi.org/10.1109/ICPR.1990.119340" target="_blank" rel="noopener noreferrer">Irani & Peleg, 1990</a></td>
+          <td class="c"></td>
         </tr>
         <tr>
-          <td>Dec 29</td>
-          <td><strong>No Class (Winter Break)</strong></td>
-          <td></td>
+          <td class="c">10</td>
+          <td>Computational Imaging</td>
+          <td class="c"></td>
+          <td class="c"><a href="https://hal.archives-ouvertes.fr/hal-02551481/" target="_blank" rel="noopener noreferrer">Ng et. al, 2005</a></td>
+          <td class="c">Mini Project 3</td>
         </tr>
         <tr>
-          <td>Dec 31</td>
-          <td><strong>No Class (Winter Break)</strong></td>
-          <td></td>
-        </tr>
-        <!-- Week 14 -->
-        <tr>
-          <td rowspan="3">14</td>
-          <td>Jan 3</td>
-          <td>Advanced Topics</td>
-          <td></td>
-          <td rowspan="3" class="c">
-            <a href="https://cs.oberlin.edu/~cs150/final-project/part-2/#project-proposal" target="_blank" rel="noopener noreferrer">Final Project Proposal</a><br/><br/>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScXCSWCtaBgvRICfZZHrELkcYODLUDzOdW1xEIbU9kG2xUjXw/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Week 14 Reflection</a>
-          </td>
+          <td class="c">11</td>
+          <td>Machine Learning</td>
+          <td class="c">Chp 5, Szeliski</td>
+          <td class="c"><a href="https://doi.org/10.1162/jocn.1991.3.1.71" target="_blank" rel="noopener noreferrer">Turk & Pentland, 1991</a></td>
+          <td class="c"></td>
         </tr>
         <tr>
-          <td>Jan 5</td>
-          <td>Advanced Topics</td>
-          <td></td>
+          <td class="c">12</td>
+          <td>Image Classification</td>
+          <td class="c">Chp 6, Szeliski</td>
+          <td class="c"><a href="https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html" target="_blank" rel="noopener noreferrer">Krizhevsky et. al, 2012</a></td>
+          <td class="c"></td>
         </tr>
         <tr>
-          <td>Jan 7</td>
-          <td>CS Research Talk</td>
-          <td></td>
-        </tr>
-        <!-- Week 15 -->
-        <tr>
-          <td rowspan="3">15</td>
-          <td>Jan 10</td>
-          <td>CS Research Talk</td>
-          <td></td>
-          <td rowspan="3" class="c">
-            <a href="https://cs.oberlin.edu/~cs150/final-project/part-2/#progress-report" target="_blank" rel="noopener noreferrer">Final Project Update</a><br/><br/>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLScjExNQtC0UDETyEhRYeExlvtzQ4q133dgcUyydDopMmsih5A/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer">Week 15 Reflection</a>
-          </td>
-          </td>
+          <td class="c">13</td>
+          <td>Project Presentations</td>
+          <td class="c"></td>
+          <td class="c"></td>
+          <td class="c">Project Presentations Due</td>
         </tr>
         <tr>
-          <td>Jan 12</td>
-          <td>CS Research Talk</td>
-          <td></td>
+          <td class="c">14</td>
+          <td>Wrap-up</td>
+          <td class="c"></td>
+          <td class="c"></td>
+          <td class="c"></td>
         </tr>
         <tr>
-          <td>Jan 14</td>
-          <td>Wrap Up</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td colspan="5" class="c"><strong><a href="https://cs.oberlin.edu/~cs150/final-project/" target="_blank" rel="noopener noreferrer">Final Project</a><br/>Due: Saturday, Jan 22 before 4:00PM</strong></td>
+          <td colspan="5" class="c"><strong>Project Report<br/>Wednesday, June 1 before 11:00am</strong></td>
         </tr>
       </tbody>
     </table>
@@ -417,90 +206,79 @@
     <h2>syllabus</h2>
     <h3>course overview</h3>
     <p>
-      CSCI 150 provides an introduction to problem solving and algorithmic thinking through computer science, with programming used as a method for implementing solutions to problems. The course covers fundamentals of computer programming, including data types, variables, expressions, statements, control structures, arrays, and recursion. It also introduces object-oriented concepts, including classes, methods, inheritance, and polymorphism. Python is used as the programming language to highlight and demonstrate these fundamentals. No prior programming experience is expected or required.
+      CSCI 353 provides an introduction to fundamental concepts, algorithms, and applications of computer vision. The course covers image formation, image processing, compressed sensing, registration, super-resolution, and object recognition. Students who do not have prior experience in linear algebra are expected to learn the necessary components as needed. Projects may be completed in any programming language; however, example code and debugging support will only be provided in Python and C++.
     </p>
     <h3>course objectives</h3>
-    <ul>
-      <li>
-        Gain familiarity with the fundamentals of computer science as a problem-solving discipline
-      </li>
-      <li>
-        Learn to think about solutions from an algorithmic perspective
-      </li>
-      <li>
-        Practice specifying problems and designing algorithms to solve problems
-      </li>
-      <li>
-        Acquire experience implementing solutions to problems using the Python programming language through lab assignments
-      </li>
-      <li>
-        Understand how computer science relates to and can interact with other disciplines
-      </li>
-      <li>
-        Experience the fun of computer science!
-      </li>
-    </ul>
+    <p>
+      In this course, you will:
+      <ul>
+        <li>
+          explore the major areas of computer vision,
+        </li>
+        <li>
+          learn to formalize computer vision problems in a common mathematical language,
+        </li>
+        <li>
+          implement computer vision algorithms and test them on real-world data,
+        </li>
+        <li>
+          develop a skill set for reading and discussing computer vision papers, and 
+        </li>
+        <li>
+          examine the relationship between computer vision and other fields of computer science (e.g., computer graphics, image informatics, computational imaging).
+        </li>
+      </ul>
+    </p>
     <h3>course website and textbook</h3>
     <p>
-      Information will be primarily communicated through <a href="https://www.blairrossetti.com/courses/csci-150/fall-2021/">this website</a>, <a href="https://blackboard.oberlin.edu/" target="_blank" rel="noopener noreferrer">Blackboard</a>, and the <a href="https://cs.oberlin.edu/~cs150" target="_blank" rel="noopener noreferrer">lab website</a>. Please check each regularly for announcements, class schedule, lab assignments, etc.
+      Information will be communicated through this website and <a href="https://blackboard.oberlin.edu/" target="_blank" rel="noopener noreferrer">Blackboard</a>. Please check each regularly for announcements, class schedule, assignments, etc.
     </p>
     <p>
-      For this class, we will be using a free Runestone interactive textbook. To register for this book, do the following:
-      <ol>
+      The textbook for this course is <i>Computer Vision: Algorithms and Applications, 2nd ed.</i> by Richard Szeliski. You can download an electronic version of this book through the library or from Szeliski’s website: <a href="https://szeliski.org/Book/" target="_blank" rel="noopener noreferrer">https://szeliski.org/Book/</a>. You may also benefit from referencing the following works:
+      <ul>
         <li>
-          Go to <a href="https://runestone.academy/" target="_blank" rel="noopener noreferrer">runestone.academy</a>
+          <a href="https://obis.oberlin.edu/record=b8476830~S4" target="_blank" rel="noopener noreferrer">Computer Vision: Models, Learning, and Inference</a> by Prince
         </li>
         <li>
-          Click “Sign Up”
+          <a href="https://obis.oberlin.edu/record=b8476923~S4" target="_blank" rel="noopener noreferrer">Computer Vision: A Modern Approach, 2nd ed.</a> by Forsyth and Ponce
         </li>
         <li>
-          Fill in the required information and enter "csci150-03-f21" (without quotes) as the course name
+          <a href="https://obis.oberlin.edu/record=b8476924~S4" target="_blank" rel="noopener noreferrer">Computer Vision: Principles, Algorithms, Applications, Learning, 5th ed.</a> by Davies
         </li>
-      </ol>
+        <li>
+          <a href="https://obis.oberlin.edu/record=b4384771~S4" target="_blank" rel="noopener noreferrer">Multiple View Geometry in Computer Vision, 2nd ed.</a> by Hartley and Zisserman
+        </li>
+        <li>
+          <a href="https://obis.oberlin.edu/record=b6124969~S4" target="_blank" rel="noopener noreferrer">Foundations of 3D Computer Graphics</a> by Gortler
+        </li>
+      </ul>
+      A copy of each textbook has been placed on reserve or is available for download through the library.      
+    </p>
+    <h3>questionnaire</h3>
+    <p>
+      There will be a short questionnaire during the first week of the course that gives you an opportunity to reflect on your initial thoughts about computer vision and this course, as well as to help me get to know each one of you better. The questionnaire will be graded based on participation — if you turn it in on time with every question answered, you will automatically receive full credit. There are no right or wrong answers to many of these questions, so please do not worry about correctness!
+    </p>
+    <h3>journal club</h3>
+    <p>
+      The best way to form a deep understanding of methods in computer vision is to read the research literature (i.e., peer-reviewed papers and preprints). We will hold a weekly Journal Club throughout the semester for you to practice reading and discussing landmark papers in computer vision.
     </p>
     <p>
-      We will have assigned readings and interactive activities from this book due before most lectures. Specifically, reading activities must be completed by 10:00AM MWF.
+      For one class each week, you will meet in small groups to discuss a paper related to a topic being covered in lecture. You are required to read each paper in advance and come to Journal Club with at least one question about the material. You will select a leader for your group each week on a rotating basis. The leader is responsible for guiding the discussion and addressing the questions being asked. The leader is not expected to know the answer to every question, rather they should guide the group towards finding the answer. The previous week’s leader will serve as the current week’s notetaker. The notetaker is not required to prepare a question, but they are responsible for recording the questions being asked as well as the main points of conversation. The notetaker will be graded on whether they successfully record and upload notes by <b>5:00pm each Friday</b> following a Journal Club. All other group members will be graded on whether they came prepared with a question. In the event that a group’s notes are not uploaded by the assignment deadline, the notetaker will receive a zero and all other group members will receive full marks.
     </p>
-    <h3>class participation</h3>
+    <h3>mini projects</h3>
     <p>
-      Active participation in this class will be an important process in your learning. Participation will take on several forms. First, questions will be asked during class periods using <a href="https://oberlin.bncollege.com/shop/oberlin/textbook/iclickerclassresponse-sysnew-only-600008297355?sectionId=104110496&displayStoreId=43060" target="_blank" rel="noopener noreferrer">iClickers</a>, and you are expected to participate by responding with your best guesses as to the correct answers. You will not be graded based on the correctness of your responses, so please just provide your best guess as to the correct answer. Second, we will have many small group discussions in class, where we work together to develop solutions to problems (in the forms of algorithms and code), as well as discuss important topics related to computer science and technology.
+      You will have the opportunity to practice the course material in three (3) hands-on mini projects. Each mini project will ask you to reason about a collection of algorithms, implement those algorithms, and discuss your results. For some mini projects, you will have the option to acquire your own test data. I will always provide you with a standard set of test data that is known to work for the given problem case. Each mini project must be completed on your own.
     </p>
+    <h3>semester project</h3>
     <p>
-      If you become ill and need to miss class, alternative arrangements can be made for your participation. Please reach out to me by email if you need to miss class. Slides from class will be posted to Blackboard for you to view asynchronously.
-    </p>
-    <p>
-      You are responsible for your own participation and may not respond for another student.
-    </p>
-    <h3>weekly reflections</h3>
-    <p>
-      To help you connect with the material that we will learn in class, you will be asked to complete short reflections each week. These reflections are designed to give you the opportunity and space to reflect on (1) what you found challenging during the week, (2) what you would like to know more about, and (3) how you’re doing. These reflections will be short (around three sentences) and should take about 5 minutes per week.
+      In place of exams, you will complete a semester-long project aimed at exploring your interests in computer vision. You have the choice to work individually or in a group of up to four (4) students. If you choose to work in a group, each member is expected to make equal contributions. Over the course of the semester, you will complete a project proposal, presentation, and report. 
     </p>
     <p>
-      There will also be a short questionnaire during the first week of the course that gives you an opportunity to reflect on your initial thoughts about computer science and this course, as well as to help me get to know each one of you better. The questionnaire will be graded based on participation -- if you turn it in on time with every question answered, you will automatically receive full credit. There are no right or wrong answers to many of these questions, so please do not worry about correctness!
-    </p>
-    <p>
-      Weekly Reflections are due <b>every Friday at 5:00pm</b>.
-    </p>
-    <h3>lab assignments</h3>
-    <p>
-      Throughout the semester, you will have the opportunity to practice the course material through hands-on lab assignments. There will be around 10 lab assignments in total. Each lab assignment consists of (1) a pair-programming warmup, to be completed in the weekly lab session, and (2) an individual programming component, to be completed by yourself outside of class. Please expect to spend around 7-9 hours per week including both the scheduled lab period (Wednesday 2:30-4:20PM) and your own time. These lab assignments are the “homework” assignments for the course   
-    </p>
-    <p>
-      Both a student lab helper and I will be available in each lab period to support you and provide assistance while you work on the warmup. Additional lab helper hours are also provided on Monday, Wednesday, and Thursday evenings, as well as Saturday and Sunday afternoons.
-    </p>
-    <h3>exams</h3>
-    <p>
-      There will be no exams in this course.      
-    </p>
-    <h3>final project</h3>
-    <p>
-      In place of a final exam, we will instead have a final project. This project will be a custom Python program that you will design and implement yourself. Your program can perform any task you choose, but it must utilize several key concepts from the course. Details about the program requirements will be announced in class and will be posted on the <a href="https://cs.oberlin.edu/~cs150" target="_blank" rel="noopener noreferrer">lab website</a>. A proposal describing your final project will be due on <b>Wednesday, January 5 at 2:30PM</b>.
-    <p>
-      The final project will be due <b>Saturday, January 22 before 4:00PM</b>.
+      Your proposal will be due at midterm and will outline your project goals, timeline, and any software/hardware requirements. Each group is expected to complete the practical portion of their project before delivering an oral presentation during the last two weeks of class. The presentation is your chance to share your work with your peers — successes as well as failures. Your project report will be a conference-style paper due <b>Wednesday, June 1 before 11:00am</b>.
     </p>
     <h3>grading</h3>
     <p>
-      Final grades will be determined based on your scores on the labs, final project, reading exercises, weekly reflections, class participation, and questionnaire as follows:
+      Final grades will be determined based on your scores on the semester project, mini projects, journal club, and questionnaire as follows:
     </p>
     <table>
       <thead>
@@ -515,41 +293,37 @@
           <td class="c">2%</td>
         </tr>
         <tr>
-          <td class="c">Weekly Reflections</td>
-          <td class="c">5%</td>
+          <td class="c">Journal Club</td>
+          <td class="c">20%</td>
         </tr>
         <tr>
-          <td class="c">Reading Exercises</td>
+          <td class="c">Mini Projects</td>
+          <td class="c">33%</td>
+        </tr>
+        <tr>
+          <td class="c">Project Proposal</td>
           <td class="c">10%</td>
         </tr>
         <tr>
-          <td class="c">Class Participation</td>
-          <td class="c">10%</td>
-        </tr>
-        <tr>
-          <td class="c">Final Project</td>
+          <td class="c">Project Presentation</td>
           <td class="c">15%</td>
         </tr>
         <tr>
-          <td class="c">Lab Assignments</td>
-          <td class="c">58%</td>
+          <td class="c">Project Report</td>
+          <td class="c">20%</td>
         </tr>
       </tbody>
     </table>
-    <h3>late homework policy</h3>
+    <h3>late work policy</h3>
     <p>
-      Unless otherwise specified, each lab will be due at <b>11:59PM on Tuesday</b> night of the week following the start of the lab assignment. Late submissions are strongly discouraged. To account for unforeseen circumstances, you are allotted four late days, total for the semester, to complete a lab assignment (more than one may be used per assignment). These will be automatically deducted by the lab graders until they have been used up.
+      Late submissions are strongly discouraged, and in many cases, late work is not accepted. It is important to speak with me early if you require an extended deadline. 
     </p>
     <p>
-      Otherwise, late submissions will be penalized 25% in the first 24 hours after the deadline, and an additional 25% for each additional day late after that. If for any reason you will need to turn in a significant number of late labs, please meet with me to discuss it.
+      The deadline for each mini project will be announced prior to its release. To account for unforeseen circumstances, you are allotted three (3) bonus days, total for the semester (more than one may be used per mini project). Bonus days will be automatically deducted until they have been used up. At which point, late submissions will be penalized 25% in the first 24 hours after the deadline, and an additional 25% for each additional day late after that.
     </p>
     <h3>accessibility</h3>
     <p>
       I am committed to making this class accessible to all students. If you have a disability that may impact your work in this class and require accommodations, please see me. Please also visit <a href="https://www.oberlin.edu/accessibility-services" target="_blank" rel="noopener noreferrer">Student Accessibility Services</a> at the Center for Student Success so that we may arrange appropriate accommodations.
-    </p>
-    <h3>tutoring</h3>
-    <p>
-      The CS department hosts drop-in peer tutoring hours in both CS labs in the evenings and on weekends (these are called “lab helper hours” for 150). If you would also like a one-on-one tutor, Oberlin College provides free tutors for this course. If you would like a tutor, please contact Donna Allen from <a href="https://www.oberlin.edu/center-student-success" target="_blank" rel="noopener noreferrer">Center for Student Success</a> in Peters 118.
     </p>
     <h3>code of conduct</h3>
     <p>
@@ -564,13 +338,7 @@
       You are expected to adhere to the Oberlin College Honor Code. Any violations will be reported to the Honor Code Committee.
     </p>
     <p>
-      On lab assignments, you may work with a partner for the <i>Warmup section only</i>. All other sections of the lab assignment must be completed on your own. In general, feel free to discuss the assignments with your peers, including general approaches to solving the problem (e.g., “think about using a loop to iterate over every element of a list”, “a modulus operation lets you keep counting between 0 and 4”), but you should never share code, nor describe the exact code needed to solve the assignment. If you do discuss a lab with another student, please indicate those students in the README file within your submission.
-    </p>
-    <p>
-      You are always allowed to use the textbook, and any resources provided by me. You are not allowed to use any other sources except when specified in the assignment. Plagiarism and cheating, as in copying the work of others, paying others to do your work, etc, is obviously prohibited, and will be reported. We will be running MOSS, an automated plagiarism detection tool, on submissions.
-    </p>
-    <p>
-      Typically, honor code violations occur due to some combination of stress, confusion, or anxiety. In these circumstances, you are strongly encouraged to reach out to me; there are always better solutions that we can work out together. Furthermore, if you have any questions about what is permitted and what is not, please feel free to ask.
+      Different assignments in this course will have different expectations with respect to the Honor Code. These expectations will be outlined in the assignment instructions. In general, collaboration and co-working is encouraged for all assignments except for the questionnaire and mini projects, which must be completed on your own. You are allowed to discuss mini projects with your peers, but you are not allowed to share code with another student nor discuss implementation details (discussions should be kept at a high level). You are always allowed to use the textbook and any resources provided by me. You are not allowed to use any other sources except when specified in the assignment. If you have any questions about what is permitted and what is not, please feel free to ask.
     </p>
     <p>
       For every assignment, you must indicate whether you followed the Honor Code in completing the assignment. If so, you should end each assignment by writing:
@@ -578,20 +346,16 @@
     <p>
       <i>I have adhered to the Honor Code in this assignment.</i>          
     </p>
-    <h3>advice for success</h3>
-    <p>
-      College is challenging for everyone in different ways. Oberlin has numerous resources to help you navigate this experience! If you need help, please reach out to me. I am happy to help connect you to the many different resources available (e.g., SHARE, PALS, Dean’s Office). Finally, a reminder that faculty at Oberlin are mandatory reporters for issues which fall under Title IX provisions.
-    </p>
     <h3>acknowledgments</h3>
     <p>
-      The content in this course is gratefully adapted from previous iterations of CSCI 150 at Oberlin, most recently from courses led by Cynthia Taylor and Adam Eck.
+      The material in this course was built upon the amazing work of many others in the computer vision community. I am grateful for those who have kindly made their content open and accessible.  
     </p>
     <br/>
-    <p><i>Last updated 2021-12-09</i></p>
+    <p><i>Last updated 2022-02-15</i></p>
   </section>
   <footer id="footer">
     <p><strong>Made by me.</strong></p>
-    <p>Blair Rossetti © 2021. All rights reserved.</p>
+    <p>Blair Rossetti © 2022. All rights reserved.</p>
   </footer>
 </body>
 </html>
