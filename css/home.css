@@ -1,0 +1,125 @@
+/* ::::::::::::::::::::::::: BANNER :::::::::::::::::::::::::: */
+
+#banner {
+  position: relative;
+  z-index: 50;
+  height: 80vh;
+  min-height: 32rem;
+  padding-top: 4rem;
+  background-color: var(--black);
+  background-image: url("../img/star-field.svg"),
+    linear-gradient(
+      to bottom,
+      var(--black),
+      var(--purple) 95%,
+      var(--white) 95%
+    );
+}
+#banner h1 {
+  text-align: center;
+  margin: 0px;
+  padding: 4rem 2rem 0px 2rem;
+  line-height: 1;
+  font-size: 3rem;
+  font-weight: normal;
+  font-family: var(--font-display);
+  color: var(--gray-200);
+  text-shadow: 0px 0px 0.25rem var(--white);
+}
+#banner p {
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding-top: 0.5rem;
+  font-size: 1.125rem;
+  color: var(--gray-400);
+}
+#top-break-bg {
+  position: absolute;
+  width: 100%;
+  height: 15rem;
+  bottom: 0px;
+}
+#top-break-slide {
+  position: absolute;
+  height: 15rem;
+  bottom: 0px;
+  right: 0px;
+}
+@media screen and (min-width: 40em) {
+  #top-break-bg,
+  #top-break-slide {
+    height: 20rem;
+  }
+}
+@media screen and (min-width: 64em) {
+  #banner h1 {
+    line-height: 1.25;
+    font-size: 4rem;
+  }
+  #banner p {
+    padding-top: 0px;
+    font-size: 1.25rem;
+  }
+  #top-break-bg,
+  #top-break-slide {
+    height: 24rem;
+  }
+}
+
+/* ::::::::::::::::::::::::::: ME :::::::::::::::::::::::::::: */
+
+#me {
+  text-align: center;
+  max-width: 36rem;
+  padding: 0px 1rem 0px 1rem;
+  z-index: 40;
+}
+#me h2 {
+  margin-bottom: 0px;
+}
+#contact-btns {
+  padding-top: 1rem;
+}
+#contact-btns a {
+  display: inline-block;
+  max-width: 5rem;
+}
+#contact-btns svg {
+  width: 100%;
+  padding: 0px 1rem 0px 1rem;
+  color: var(--purple);
+}
+
+/* :::::::::::::::::::::::: RESEARCH ::::::::::::::::::::::::: */
+
+#research {
+  text-align: center;
+  z-index: 30;
+}
+#research svg {
+  width: 65%;
+  margin: auto auto auto auto;
+  padding: 0px 1rem 0px 1rem;
+  opacity: 0.7;
+}
+
+/* :::::::::::::::::::::::: TEACHING ::::::::::::::::::::::::: */
+
+#teaching {
+  text-align: center;
+  z-index: 20;
+}
+#teaching .cutout {
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+/* :::::::::::::::::::::::: TINKERING :::::::::::::::::::::::: */
+
+#tinkering {
+  text-align: center;
+  margin-bottom: 2rem;
+  z-index: 10;
+}
+#tinkering h3 {
+  margin-bottom: 0px;
+}

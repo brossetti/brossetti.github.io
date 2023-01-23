@@ -1,0 +1,46 @@
+<svg id="top-break-bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 205 99" preserveAspectRatio="none">
+  <defs>
+    <filter id="shadow" name="shadow">
+      <feDropShadow dx="1" dy="1" stdDeviation="1"/>
+    </filter>
+  </defs>
+  <g id="s12" filter="url(#shadow)">
+    <path d="M205,49.18v50.8275H0V49.18" fill="#d73b48"/>
+  </g>
+  <g id="s11" filter="url(#shadow)">
+    <path d="M205,52.0571v47.9505H0v-47.95" fill="#e95a54"/>
+  </g>
+  <g id="s10" filter="url(#shadow)">
+    <path d="M205,54.9341v45.0735H0V54.9341" fill="#ff9760"/>
+  </g>
+  <g id="s9" filter="url(#shadow)">
+    <path d="M205,57.8112v42.1964L0,99.925V57.7286" fill="#f3bb63"/>
+  </g>
+  <g id="s8" filter="url(#shadow)">
+    <path d="M205,60.6882v39.3194H0V60.6882" fill="#f1cd65"/>
+  </g>
+  <g id="s7" filter="url(#shadow)">
+    <path d="M205,63.5652v36.4424H0V63.5652" fill="#ffe465"/>
+  </g>
+  <g id="s6" filter="url(#shadow)">
+    <path d="M205,66.4423v33.5653H0V66.4423" fill="#cfdb5e"/>
+  </g>
+  <g id="s5" filter="url(#shadow)">
+    <path d="M205,69.3193v30.6883H0V69.3193" fill="#aecd7b"/>
+  </g>
+  <g id="s4" filter="url(#shadow)">
+    <path d="M205,72.1963v27.8113H0V72.1963" fill="#c0df9e"/>
+  </g>
+  <g id="s3" filter="url(#shadow)">
+    <path d="M205,75.0734v24.9342H0V75.0734" fill="#d8f4c2"/>
+  </g>
+  <g id="s2" filter="url(#shadow)">
+    <path d="M205,77.95v22.0572H0V77.95" fill="#d6eacd"/>
+  </g>
+  <g id="s1" filter="url(#shadow)">
+    <path d="M205,80.8274v19.18H0v-19.18" fill="#eaf9ea"/>
+  </g>
+  <g id="s0" filter="url(#shadow)">
+    <path d="M205,83.7044v16.3032H0V83.7044" fill="#fff"/>
+  </g>
+</svg>

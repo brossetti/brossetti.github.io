@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSCI-353: Computer Vision (Spring 2022)</title>
+  <meta name="description" content="Course website for CSCI-353: Computer Vision at Oberlin College">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- sanitize -->
+  <link rel="stylesheet" href="../../../css/vendor/sanitize.css">
+  <link rel="stylesheet" href="../../../css/vendor/typography.css">
+  <link rel="stylesheet" href="../../../css/vendor/assets.css">
+
+  <!-- custom -->
+  <link rel="stylesheet" href="../../../css/base.css">
+  <link rel="stylesheet" href="./index.css">
+  <script defer src="../../../js/index.js"></script>
+
+  <meta name="theme-color" content="#5b5f97">
+  <link rel="icon" href="../../../favicon.svg">
+
+  <!--
+    Oh, hello there! Didn't expect to find you in here. Part of being a computer scientist is exploration. If you are in my class, email me with the following code to get a prize! 
+    Code: Tm7JyMpwRj
+    -->
+</head>
+
+<body>
+  <header id="navbar">
+    <a id="logo" href="#"></a>
+    <nav>
+      <a href="../../../index.html">Home</a>
+      <span>/</span>
+      <a href="#schedule">Schedule</a>
+      <span>/</span>
+      <a href="#syllabus">Syllabus</a>
+    </nav>
+  </header>
+  <section id="banner">
+    <h1>CSCI-353</h1>
+    <p>Computer Vision</p>
+    <p>Spring 2022</p>
+    <div id="nyan-yeobie">
+      <div id="rainbow"></div>
+      <img src="../../../img/nyan-yeobie.gif" alt="">
+    </div>
+  </section>
+  <section id="hello" class="container">
+    <h2>Hello, Class!</h2>
+    <p>Welcome to CSCI 353! This course is all about the fundamentals of computer vision. Together we'll learn how to manipulate and extract information from images. We'll study how the human brain <i>"sees"</i> the world, and then we'll use that knowledge to make computers do the same. But let's be real, we're all here to write code and make pretty pictures. Let's do this!</p>
+  </section>
+  <div class="break">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 10">
+      <circle cx="10" cy="5" r="2"/>
+      <circle cx="25" cy="5" r="2"/>
+      <circle cx="40" cy="5" r="2"/>
+    </svg>
+  </div>
+  <section id="details" class="container">
+    <p>
+      <b>Lecture Time:</b> 9:00-9:50am MWF</br>
+      <b>Location:</b> King 227
+    </p>
+    <p>
+      <b>Office Hours:</b> 1:00-2:00pm M & 10:00-11:00am T</br>
+      <b>Location:</b> King 229
+    </p>
+  </section>
+  <div class="break">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 10">
+      <circle cx="10" cy="5" r="2"/>
+      <circle cx="25" cy="5" r="2"/>
+      <circle cx="40" cy="5" r="2"/>
+    </svg>
+  </div>
+  <section id="schedule" class="container">
+    <h2>schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Week</th>
+          <th>Topic</th>
+          <th>Journal Club</th>
+          <th>Assignment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="c">0</td>
+          <td>Welcome!</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="c">1</td>
+          <td>Sensing and Image Basics</td>
+          <td class="c"><a href="https://doi.org/10.1145/1273445.1273458" target="_blank" rel="noopener noreferrer">Keshav, 2007</a></td>
+          <td class="c"><a href="https://forms.gle/wcmAdUYn16jfkbrV9" target="_blank" rel="noopener noreferrer">Questionnaire</a> due 3/2 at 5pm</td>
+        </tr>
+        <tr>
+          <td class="c">2</td>
+          <td>Global and Local Image Operations</td>
+          <td class="c"><a href="https://doi.org/10.1109/CVPR.2005.38" target="_blank" rel="noopener noreferrer">Buades et. al, 2005</a></td>
+          <td class="c"></td>
+        </tr>
+        <tr>
+          <td class="c">3</td>
+          <td>Filtering and Transformations</td>
+          <td class="c"><a href="https://doi.org/10.1145/1141911.1141919" target="_blank" rel="noopener noreferrer">Oliva et. al, 2006</a></td>
+          <td class="c">Mini Project 1 due 3/25 at 11:59pm</td>
+        </tr>
+        <tr>
+          <td class="c">4</td>
+          <td>Frequency Domain</td>
+          <td class="c"><a href="https://doi.org/10.1109/MSP.2007.914730" target="_blank" rel="noopener noreferrer">Duarte et. al, 2008</a></td>
+          <td class="c"></td>
+        </tr>
+        <tr>
+          <td class="c">5</td>
+          <td>Image Features</td>
+          <td class="c"><a href="https://doi.org/10.1109/CVPR.2005.177" target="_blank" rel="noopener noreferrer">Dalal & Triggs, 2005</a></td>
+          <td class="c"></td>
+        </tr>
+        <tr>
+          <td class="c">6</td>
+          <td>Guest Lecture: Stephen Mather</br>Corner Detection</td>
+          <td class="c"><a href="https://www.theatlantic.com/technology/archive/2016/02/lena-image-processing-playboy/461970/" target="_blank" rel="noopener noreferrer">Iozzio, 2016</a></td>
+          <td class="c">Mini Project 2 due 4/22 at 11:59pm</br>Project Proposal due 4/1 at 5pm</td>
+        </tr>
+        <tr>
+          <td class="c">7</td>
+          <td colspan="4"><b>Break</b></td>
+        </tr>
+        <tr>
+          <td class="c">8</td>
+          <td>Edge and Contour Detection</td>
+          <td class="c"><a href="https://doi.org/10.1007/BF00133570" target="_blank" rel="noopener noreferrer">Kass et. al, 1988</a></td>
+          <td class="c"></td>
+        </tr>
+        <tr>
+          <td class="c">9</td>
+          <td>Line, Circle, and Blob Detection</td>
+          <td class="c"><a href="https://doi.org/10.1023/B:VISI.0000029664.99615.94" target="_blank" rel="noopener noreferrer">Lowe, 2004</a></td>
+          <td class="c"></td>
+        </tr>
+        <tr>
+          <td class="c">10</td>
+          <td>2D Transformations</td>
+          <td class="c"><a href="https://doi.org/10.1145/358669.358692" target="_blank" rel="noopener noreferrer">Fischler et. al, 1981</a></td>
+          <td class="c">Mini Project 3 due 5/11 at 11:59pm</br>Project Check-In due 4/29 at 11:59pm</td>
+        </tr>
+        <tr>
+          <td class="c">11</td>
+          <td>Image Alignment and Image Classification</td>
+          <td class="c"><a href="https://doi.org/10.1162/jocn.1991.3.1.71" target="_blank" rel="noopener noreferrer">Turk & Pentland, 1991</a></td>
+          <td class="c"></td>
+        </tr>
+        <tr>
+          <td class="c">12</td>
+          <td>Image Classification</br>Speaking Workshop</td>
+          <td class="c"><a href="https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html" target="_blank" rel="noopener noreferrer">Krizhevsky et. al, 2012</a></td>
+          <td class="c"></td>
+        </tr>
+        <tr>
+          <td class="c">13</td>
+          <td>Project Presentations</td>
+          <td class="c">-</td>
+          <td class="c">Project Presentations due 5/18-5/25</td>
+        </tr>
+        <tr>
+          <td class="c">14</td>
+          <td>Wrap-up</td>
+          <td class="c">-</td>
+          <td class="c">Project Codebase due 5/26 at 11:59pm</td>
+        </tr>
+        <tr>
+          <td colspan="4" class="c"><strong>Project Report<br/>Wednesday, June 1 before 11:00am</strong></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <div class="break">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 10">
+      <circle cx="10" cy="5" r="2"/>
+      <circle cx="25" cy="5" r="2"/>
+      <circle cx="40" cy="5" r="2"/>
+    </svg>
+  </div>
+  <section id="syllabus" class="container">
+    <h2>syllabus</h2>
+    <h3>course overview</h3>
+    <p>
+      CSCI 353 provides an introduction to fundamental concepts, algorithms, and applications of computer vision. The course covers image formation, image processing, compressed sensing, registration, super-resolution, and object recognition. Students who do not have prior experience in linear algebra are expected to learn the necessary components as needed. Projects may be completed in any programming language; however, example code and debugging support will only be provided in Python and C++.
+    </p>
+    <h3>course objectives</h3>
+    <p>
+      In this course, you will:
+      <ul>
+        <li>
+          explore the major areas of computer vision,
+        </li>
+        <li>
+          learn to formalize computer vision problems in a common mathematical language,
+        </li>
+        <li>
+          implement computer vision algorithms and test them on real-world data,
+        </li>
+        <li>
+          develop a skill set for reading and discussing computer vision papers, and 
+        </li>
+        <li>
+          examine the relationship between computer vision and other fields of computer science (e.g., computer graphics, image informatics, computational imaging).
+        </li>
+      </ul>
+    </p>
+    <h3>course website and textbook</h3>
+    <p>
+      Information will be communicated through this website and <a href="https://blackboard.oberlin.edu/" target="_blank" rel="noopener noreferrer">Blackboard</a>. Please check each regularly for announcements, class schedule, assignments, etc.
+    </p>
+    <p>
+      The recommended textbooks for this course are <i>Digital Image Processing, 4th ed.</i> by Rafael Gonzalez & Richard Woods and <i>Computer Vision: Algorithms and Applications, 2nd ed.</i> by Richard Szeliski. You can download an electronic version of Szeliski’s book through the library or from his website: <a href="https://szeliski.org/Book/" target="_blank" rel="noopener noreferrer">https://szeliski.org/Book/</a>. You may also benefit from referencing the following works:
+      <ul>
+        <li>
+          <a href="https://obis.oberlin.edu/record=b8476830~S4" target="_blank" rel="noopener noreferrer">Computer Vision: Models, Learning, and Inference</a> by Prince
+        </li>
+        <li>
+          <a href="https://obis.oberlin.edu/record=b8476923~S4" target="_blank" rel="noopener noreferrer">Computer Vision: A Modern Approach, 2nd ed.</a> by Forsyth and Ponce
+        </li>
+        <li>
+          <a href="https://obis.oberlin.edu/record=b8476924~S4" target="_blank" rel="noopener noreferrer">Computer Vision: Principles, Algorithms, Applications, Learning, 5th ed.</a> by Davies
+        </li>
+        <li>
+          <a href="https://obis.oberlin.edu/record=b4384771~S4" target="_blank" rel="noopener noreferrer">Multiple View Geometry in Computer Vision, 2nd ed.</a> by Hartley and Zisserman
+        </li>
+        <li>
+          <a href="https://obis.oberlin.edu/record=b6124969~S4" target="_blank" rel="noopener noreferrer">Foundations of 3D Computer Graphics</a> by Gortler
+        </li>
+      </ul>
+      A copy of each textbook has been placed on reserve or is available for download through the library.      
+    </p>
+    <h3>questionnaire</h3>
+    <p>
+      There will be a short questionnaire during the first week of the course that gives you an opportunity to reflect on your initial thoughts about computer vision and this course, as well as to help me get to know each one of you better. The questionnaire will be graded based on participation — if you turn it in on time with every question answered, you will automatically receive full credit. There are no right or wrong answers to many of these questions, so please do not worry about correctness!
+    </p>
+    <h3>journal club</h3>
+    <p>
+      The best way to form a deep understanding of methods in computer vision is to read the research literature (i.e., peer-reviewed papers and preprints). We will hold a weekly Journal Club throughout the semester for you to practice reading and discussing landmark papers in computer vision.
+    </p>
+    <p>
+      For one class each week, you will meet in small groups to discuss a paper related to a topic being covered in lecture. You are required to read each paper in advance and come to Journal Club with at least one question about the material. You will select a leader for your group each week on a rotating basis. The leader is responsible for guiding the discussion and addressing the questions being asked. The leader is not expected to know the answer to every question, rather they should guide the group towards finding the answer. The previous week’s leader will serve as the current week’s notetaker. The notetaker is not required to prepare a question, but they are responsible for recording the questions being asked as well as the main points of conversation. The notetaker will be graded on whether they successfully record and upload notes by <b>5:00pm each Friday</b> following a Journal Club. All other group members will be graded on whether they came prepared with a question. In the event that a group’s notes are not uploaded by the assignment deadline, the notetaker will receive a zero and all other group members will receive full marks.
+    </p>
+    <p>
+      If you are unable to attend Journal Club, you may receive credit by submitting a one-page summary of the paper and your perspectives on the content. The one-page summary is due the same day and time as the Journal Club notes.
+    </p>
+    <h3>mini projects</h3>
+    <p>
+      You will have the opportunity to practice the course material in three (3) hands-on mini projects. Each mini project will ask you to reason about a collection of algorithms, implement those algorithms, and discuss your results. For some mini projects, you will have the option to acquire your own test data. I will always provide you with a standard set of test data that is known to work for the given problem case. Each mini project must be completed on your own.
+    </p>
+    <h3>semester project</h3>
+    <p>
+      In place of exams, you will complete a semester-long project aimed at exploring your interests in computer vision. You have the choice to work individually or in a group of up to four (4) students. If you choose to work in a group, each member is expected to make equal contributions. Over the course of the semester, you will complete a project proposal, presentation, and report. 
+    </p>
+    <p>
+      Your proposal will be due at midterm and will outline your project goals, timeline, and any software/hardware requirements. Each group is expected to complete the practical portion of their project before delivering an oral presentation during the last two weeks of class. The presentation is your chance to share your work with your peers — successes as well as failures. Your project report will be a conference-style paper due <b>Wednesday, June 1 before 11:00am</b>.
+    </p>
+    <h3>grading</h3>
+    <p>
+      Final grades will be determined based on your scores on the semester project, mini projects, journal club, and questionnaire as follows:
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="c">Questionnaire</td>
+          <td class="c">2%</td>
+        </tr>
+        <tr>
+          <td class="c">Journal Club</td>
+          <td class="c">20%</td>
+        </tr>
+        <tr>
+          <td class="c">Mini Projects</td>
+          <td class="c">33%</td>
+        </tr>
+        <tr>
+          <td class="c">Project Proposal</td>
+          <td class="c">10%</td>
+        </tr>
+        <tr>
+          <td class="c">Project Presentation</td>
+          <td class="c">15%</td>
+        </tr>
+        <tr>
+          <td class="c">Project Report</td>
+          <td class="c">20%</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>late work policy</h3>
+    <p>
+      Late submissions are strongly discouraged, and in many cases, late work is not accepted. It is important to speak with me early if you require an extended deadline. 
+    </p>
+    <p>
+      The deadline for each mini project will be announced prior to its release. To account for unforeseen circumstances, you are allotted three (3) bonus days, total for the semester (more than one may be used per mini project). Bonus days will be automatically deducted until they have been used up. At which point, late submissions will be penalized 25% in the first 24 hours after the deadline, and an additional 25% for each additional day late after that.
+    </p>
+    <h3>accessibility</h3>
+    <p>
+      I am committed to making this class accessible to all students. If you have a disability that may impact your work in this class and require accommodations, please see me. Please also visit <a href="https://www.oberlin.edu/accessibility-services" target="_blank" rel="noopener noreferrer">Student Accessibility Services</a> at the Center for Student Success so that we may arrange appropriate accommodations.
+    </p>
+    <h3>code of conduct</h3>
+    <p>
+      Both Oberlin College and I personally value the diversity of perspectives that each of you bring to this classroom and our joint study of computer science. In this class, we must all commit to fostering a safe, inclusive, and welcoming environment which will allow all of us to learn. Please respect the competence and hard work of your colleagues in this classroom. If you are made to feel uncomfortable in class or while working on class material, please notify me so we can take steps to address the situation. Students who are disruptive to class and our learning community will face consequences, including potentially being removed from the course.
+    </p>
+    <h3>expectations</h3>
+    <p>
+      In this class, you will be expected to work actively to construct your own understanding of the topics at hand, with the readily available help of me and your classmates. Many of the concepts you learn and problems you work will be new to you and ask you to stretch your thinking. It is completely natural and common to experience frustration and failure before you experience understanding. This is part of the normal learning process. You are supported on all sides by me and your classmates. But no student is exempt from the process and the hard work that it entails.
+    </p>
+    <h3>academic honesty</h3>
+    <p>
+      You are expected to adhere to the Oberlin College Honor Code. Any violations will be reported to the Honor Code Committee.
+    </p>
+    <p>
+      Different assignments in this course will have different expectations with respect to the Honor Code. These expectations will be outlined in the assignment instructions. In general, collaboration and co-working is encouraged for all assignments except for the questionnaire and mini projects, which must be completed on your own. You are allowed to discuss mini projects with your peers, but you are not allowed to share code with another student nor discuss implementation details (discussions should be kept at a high level). You are always allowed to use the textbook and any resources provided by me. You are not allowed to use any other sources except when specified in the assignment. If you have any questions about what is permitted and what is not, please feel free to ask.
+    </p>
+    <p>
+      For every assignment, you must indicate whether you followed the Honor Code in completing the assignment. If so, you should end each assignment by writing:
+    </p>
+    <p>
+      <i>I have adhered to the Honor Code in this assignment.</i>          
+    </p>
+    <h3>acknowledgments</h3>
+    <p>
+      The material in this course was built upon the amazing work of many others in the computer vision community. I am grateful for those who have kindly made their content open and accessible.  
+    </p>
+    <br/>
+    <p><i>Last updated 2022-04-02</i></p>
+  </section>
+  <footer id="footer">
+    <p><strong>Made by me.</strong></p>
+    <p>Blair Rossetti © 2022. All rights reserved.</p>
+  </footer>
+</body>
+</html>
