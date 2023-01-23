@@ -2,7 +2,7 @@
 const R_EARTH = 1;                   //radius of the Earth (AU)
 const R_MOON = 0.2727;               //normalized radius of the Moon
 const S_SATELLITE = 0.45;            //normalized side dimension of the Satellite
-const ALTITUDE = 0.4                 //normalized distance from Satellite to Earth
+const ALTITUDE = 0.5                 //normalized distance from Satellite to Earth
 const DIST_EARTH_TO_MOON = 10;       //normalized distance from Earth to Moon
 const ARCSEC = 2 * Math.PI / 60;
 const ARCMSEC = 2 * Math.PI / 60000;
